@@ -69,6 +69,14 @@ one place for all tech stack
 ### Install of PhpStrom
 -------------------------
 
+  Install Phpstrom  Snap Way 
+  ---------------------------
+          - sudo snap install phpstorm --classic
+  
+ Un-Install PhpStrom 
+ --------------------
+             - sudo snap remove phpstorm
+
 
 
 
