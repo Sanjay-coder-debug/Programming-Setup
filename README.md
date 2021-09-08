@@ -55,18 +55,36 @@ one place for all tech stack
 
 
 
+IDE,EDITORS & Other
+===================
+### Anydesk
+-----------
+
+
+### Postman
+--------------
+
+
+### Eclipse
+------------
+                         - sudo snap remove postman
 
 
 
-### Install of Vs Code
+### Atom
+--------------------
+
+
+
+### Vs Code
 -------------------------
+                            - 
 
 
 
 
 
-
-### Install of PhpStrom
+### PhpStrom
 -------------------------
 
           - sudo snap install phpstorm --classic
@@ -97,9 +115,6 @@ one place for all tech stack
 
 
 
-### Install of Atom
---------------------
-
 
 
 
@@ -117,9 +132,6 @@ one place for all tech stack
 
 
 
-
-### Install of Anydesk
-------------------------
 
 
 
