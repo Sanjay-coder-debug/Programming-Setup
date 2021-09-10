@@ -95,6 +95,9 @@ Language :
 
 Framework : - : 
 =================
+
+### Magento
+-------------
              General
              ---------
                     - sudo php bin/magento setup:upgrade
@@ -116,7 +119,8 @@ Framework : - :
                   step- 1
                   --------
                             - Check the System Requirement
-                            
+                            - ![demo](https://user-images.githubusercontent.com/78407424/132894029-ca0e0732-1334-4a66-93dd-62dcff27752e.png)
+
            
            
            
