@@ -155,7 +155,8 @@ IDE,EDITORS & Other
 
 
 OpenSource Tools
--------------------
+==================
+
 
 
 
@@ -210,6 +211,52 @@ Chrome
 
 ## Mysql Command 
 -----------------
+        General 
+        --------       
+             - mysql --version
+             - sudo service mysql status
+             - sudo service mysql stop
+             - sudo service mysql start
+        Install
+        --------
+             - sudo apt policy mysql-server  
+             - sudo apt update
+             - sudo apt install wget -y
+             - wget https://dev.mysql.com/get/mysql-apt-config_0.8.12-1_all.deb
+             - sudo dpkg -i mysql-apt-config_0.8.12-1_all.deb
+         
+        (Or)
+             - sudo apt-cache policy mysql-server
+             - sudo apt install -f mysql-client=5.7* mysql-community-server=5.7* mysql-server=5.7*
+             - sudo mysql_secure_installation
+             
+             
+             
+             
+        Un-install
+        -----------
+            - sudo systemctl stop mysql
+            - sudo apt-get purge mysql-server mysql-client mysql-common mysql-server-core-* mysql-client-core-*
+            - sudo apt-get remove --purge mysql*
+            - sudo apt autoremove
+            - sudo apt-get autoclean
+            - sudo rm -rf /var/lib/mysql
+            - sudo rm -rf /etc/mysql
+            - 
+            
+       Mysql  user issue 
+       ------------------
+             - SELECT User, Host FROM mysql.user;
+             - select user from mysql.user;
+             - CREATE USER 'magento237'@'localhost' IDENTIFIED BY 'password';
+             - GRANT ALL PRIVILEGES ON *.* TO 'magento237'@'localhost' WITH GRANT OPTION;
+       
+       
+       
+       
+       Import Existing Database
+       -------------------------
+             - mysql -u username -p database_name < file.sql          -  Syntax for import existing database file                      - 
 
 
 
