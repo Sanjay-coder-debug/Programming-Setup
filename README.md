@@ -158,7 +158,21 @@ OpenSource Tools
 ==================
 
 
-
+### Composer
+------------
+        General
+        ---------
+            - composer -v
+            - cd
+            - pwd
+            - check the php must be install
+        Install
+        ---------
+            - sudo apt install unzip
+            - curl -sS https://getcomposer.org/installer -o composer-setup.php
+            - sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+       Un-install
+       -----------
 
 ### Github , Gitlab , BitBucket
 -------------------------------------------
@@ -188,12 +202,21 @@ Chrome
 ## Nginx Command 
 -----------------
       General
+      --------
+           - nginx --version
            - sudo service nginx status | stop | start | restart
            - sudo systemctl stop nginx.service
            - sudo systemctl start nginx.service
            - sudo systemctl enable nginx.service
+           - sudo nano /etc/nginx/sites-available/default 
+        
+        (Or)
+            - /etc/init.d/nginx status
+            - /etc/init.d/nginx stop
+            - /etc/init.d/nginx start
            
       Install
+      ---------
            - 
            - 
            - 
@@ -201,11 +224,15 @@ Chrome
            - 
       
       Un-install
-           - 
-           - 
-           - 
-           - 
-           - 
+      -----------
+           - sudo apt-get remove nginx nginx-common
+           - sudo apt-get purge nginx nginx-common
+           - sudo apt-get autoremove
+      Nginx Issue
+      ------------
+           - sudo nginx -t
+           - tail -f /var/log/nginx/error.log
+           - ps auxf | grep nginx
            
       
 
