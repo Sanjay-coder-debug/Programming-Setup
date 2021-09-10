@@ -13,7 +13,9 @@ one place for all tech stack
 
 
 
-
+OS Installation 
+------------------
+  
 
 
 ### Kali Linux Command
@@ -25,12 +27,16 @@ one place for all tech stack
 ---------------------
 
 
+### Windos
+------------
 
 
 
 
 
-
+Language :
+--------------
+             - All Language Install and Setup
 
 ### Java Command
 --------------------
@@ -46,9 +52,29 @@ one place for all tech stack
 
 ### Php Command
 --------------------
-
-
-
+        General
+        -------
+           - php --version                              - Check Which Version php You have in your system
+           - sudo update-alternatives --config php      - List All The Php Version 
+           - sudo systemctl restart php7.3-fpm  | start php7.3-fpm  | stop php7.3-fpm 
+           
+        Install
+        --------
+           - sudo apt install software-properties-common
+           - sudo add-apt-repository ppa:ondrej/php
+           - sudo apt-get update
+           - sudo apt install php7.4 || sudo apt install php7.3  || sudo apt install php - choose your version
+           - sudo apt-get install php7.4-common php7.4-xml php7.4-curl php7.4-bcmath php7.4-intl php7.4-gd php7.4-zip php7.4-mysql php7.4-soap php7.4-mbstring
+           - sudo apt install php7.4-common php7.4-mysql php7.4 php7.4-cgi libapache2-mod-php7.4 php-pear php7.4-mbstring
+           - ext-bcmath,ext-ctype,ext-curl,ext-dom,ext-gd,ext-hash,ext-iconv,ext-int,ext-mbstring,ext-openssl,ext-pdo_mysql,ext-simplexml,ext-soap,ext-xsl, ext-zip,              ext- sockets
+            
+        Un-install
+        -----------
+             - sudo apt-get purge php7.*
+             - sudo apt-get autoclean
+             - sudo apt-get autoremove
+             - sudo apt autoremove
+           
 
 ### Python Command
 -------------------
@@ -67,8 +93,22 @@ IDE,EDITORS & Other
 
 ### Eclipse
 ------------
-                         - sudo snap remove postman
-
+       General
+                 - sudo snap remove eclipse
+                 - 
+                 - 
+                 
+       Install
+                 - 
+                 - 
+                 - 
+                 - 
+          
+       Un-Install
+                 -
+                 - 
+                 - 
+              
 
 
 ### Atom
@@ -114,41 +154,25 @@ IDE,EDITORS & Other
   
 
 
+OpenSource Tools
+-------------------
 
 
 
-
-
-### Install of Github , Gitlab , BitBucket
+### Github , Gitlab , BitBucket
 -------------------------------------------
 
 
 
 
 
-
-### Install Of Android Studio
+Android Studio
 -------------------------------
 
 
 
-
-
-
-### Install Of Chrome 
+Chrome 
 ------------------------
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -162,12 +186,27 @@ IDE,EDITORS & Other
 
 ## Nginx Command 
 -----------------
-
-
-
-
-
-
+      General
+           - sudo service nginx status | stop | start | restart
+           - sudo systemctl stop nginx.service
+           - sudo systemctl start nginx.service
+           - sudo systemctl enable nginx.service
+           
+      Install
+           - 
+           - 
+           - 
+           - 
+           - 
+      
+      Un-install
+           - 
+           - 
+           - 
+           - 
+           - 
+           
+      
 
 ## Mysql Command 
 -----------------
