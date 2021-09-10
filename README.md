@@ -57,6 +57,14 @@ Language :
            - php --version                              - Check Which Version php You have in your system
            - sudo update-alternatives --config php      - List All The Php Version 
            - sudo systemctl restart php7.3-fpm  | start php7.3-fpm  | stop php7.3-fpm 
+           - sudo a2dismod php7.2
+           - sudo a2enmod php7.4
+           - sudo service php7.3-fpm status
+           - sudo service php7.3-fpm stop
+           - sudo service php7.3-fpm start
+           - sudo service php7.4-fpm status
+           - sudo service php7.4-fpm stop
+
            
         Install
         --------
@@ -78,6 +86,46 @@ Language :
 
 ### Python Command
 -------------------
+
+
+
+
+
+
+
+Framework : - : 
+=================
+             General
+             ---------
+                    - sudo php bin/magento setup:upgrade
+                    - sudo bin/magento setup:di:compile
+                    - sudo bin/magento setup:static-content:deploy -f
+                    - sudo bin/magento indexer:reindex
+                    - sudo bin/magento cache:flush
+                    - sudo bin/magento cache:clean
+                    - sudo bin/magento module:status 
+                    - sudo php bin/magento   - check when Namespace error
+                    - sudo php bin/magento setup:di:compile
+                    - sudo chmod -R 777 var/ pub/ generated/        
+                    - sudo bin/magento module:disable Codilar_Thor   - Disable any Module
+                    - rm -rf FolderName   - To Remove any Folder 
+                    - bin/magento dep:mod:show
+                    - sudo bin/magento de:mo:se developer
+           Install
+           ---------
+                  step- 1
+                  --------
+                            - Check the System Requirement
+                            
+           
+           
+           
+           
+           
+          Un-install
+          ------------
+
+
 
 
 
@@ -217,7 +265,7 @@ Chrome
            
       Install
       ---------
-           - 
+           - sudo apt install nginx
            - 
            - 
            - 
