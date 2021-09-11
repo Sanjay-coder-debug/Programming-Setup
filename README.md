@@ -121,19 +121,42 @@ Framework : - :
                             - Check the System Requirement
 ![demo](https://user-images.githubusercontent.com/78407424/132894029-ca0e0732-1334-4a66-93dd-62dcff27752e.png)
                             
+                 step- 2
+                 --------
+                    Step For Local Magento Setup
+                    -------------------------------
+                        - composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition:2.3.7-p1 .
+                        - composer create-project --repository=https://repo.magento.com/ magento/project-community-edition:2.3.7 Magento237(you folder name)
+                        
+                  (Or)
+                  
+                     If You Want To Setup  For Project
+                        -  Need step -1 complete
+                        -  clone the project repo
+                        
+                step -2)i)
+                -----------
+                        - Create Database on Mysql for install DB
+                        - Also If You Want To Setup Using new User You can Create
+                       
+                       
+                step-3
+                -------
+                Database Setup  (Both for Local and Project)
+                -----------------------------------------------
+                - bin/magento setup:install  --base-url=http://magento237.local/  --db-host=localhost  --db-name=magento  --db-user=magento237  --db- password=Sanjay1997@@ --backend-frontname=admin  --admin-firstname=admin  --admin-lastname=admin  --admin-email=devops1@codilar.com  --admin-user=admin1  --admin-password=admin123  --language=en_US  --currency=INR  --timezone=Asia/Kolkata  --use-rewrites=1
+                
+           If You Want To Create New User For Magento
+           --------------------------------------------- 
+               -  php bin/magento admin:user:create --admin-user=local --admin-password=admin123 --admin-email=sanjay1@gmail.com --admin-firstname=admin --admin-lastname=admin
 
+
+
+           Un-install
+          ------------          
            
            
-           
-           
-           
-          Un-install
-          ------------
-
-
-
-
-
+       
 IDE,EDITORS & Other
 ===================
 ### Anydesk
