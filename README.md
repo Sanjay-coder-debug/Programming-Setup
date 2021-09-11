@@ -55,7 +55,7 @@ Language :
         General
         -------
            - php --version                              - Check Which Version php You have in your system
-           - sudo update-alternatives --config php      - List All The Php Version 
+           - sudo update-alternatives --config php      - List All The Php Version & use as per your need 
            - sudo systemctl restart php7.3-fpm  | start php7.3-fpm  | stop php7.3-fpm 
            - sudo a2dismod php7.2
            - sudo a2enmod php7.4
@@ -126,7 +126,7 @@ Framework : - :
                     Step For Local Magento Setup
                     -------------------------------
                         - composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition:2.3.7-p1 .
-                        - composer create-project --repository=https://repo.magento.com/ magento/project-community-edition:2.3.7 Magento237(you folder name)
+                        - composer create-project --repository=https://repo.magento.com/ magento/project-community-edition:2.3.7 Magento237(your folder name)
                         
                   (Or)
                   
@@ -150,6 +150,62 @@ Framework : - :
            --------------------------------------------- 
                -  php bin/magento admin:user:create --admin-user=local --admin-password=admin123 --admin-email=sanjay1@gmail.com --admin-firstname=admin --admin-lastname=admin
 
+
+
+           Some Issue Need To Check After Install(May You Get Error)
+           ----------------------------------------------------------
+             
+              - cd /etc/nginx/sites-available/
+              - cd /etc/nginx/sites-enabled/
+              - nginx.sample.config
+              
+              
+         If You Have More Than One Magento 
+         -----------------------------------
+              - sudo ln -s /etc/nginx/sites-available/magento237 /etc/nginx/sites-enabled     (Enable your project)  
+              - sudo unlink folder_name                                                       (Inside (/etc/nginx/sites-enabled/) Path)
+              - sudo update-alternatives --config php                                        (list php and change the Php Version as per Magento Version)
+              - sudo service nginx restart                                                    (Restart Your nginx)
+
+
+
+
+        Some Error To Solve in Magento 
+        ------------------------------
+        
+              - etc/nginx/sites-available/magento237(magento setup folder_name)         - Path of Folder
+              - sudo nano magento237(folder_name)                                       - Need To Open this file or as same for other magento file
+              
+             - Check The Below Format
+                                      upstream fastcgi_backend {
+                                                         server unix:/run/php/php7.4-fpm.sock;
+                                                      } 
+                                               server {
+                                                       listen 80;
+                                                       server_name local.test.com;
+                                                       set $MAGE_ROOT /var/www/html/test;
+                                                       set $MAGE_RUN_TYPE website;
+                                                       include /var/www/html/test/nginx.conf.sample;
+                                                     }
+                                         
+                                         
+                                         
+              - Also Some time Some memory  issue(502 Bad gateway Error) so you can add  Inside(var/www/html/Magento_Folder_Name/nginx.conf.sample file)
+                                  
+                                             fastcgi_buffers 8 16k;
+                                             fastcgi_buffer_size 32k;
+                                             fastcgi_connect_timeout 90;
+                                             fastcgi_send_timeout 90;
+                                             fastcgi_read_timeout 90;
+                                             
+              Some Quick Way Need To Check For Get Error
+              -------------------------------------------
+                 -  var/www/html/magento_folder_name/app/etc/env.php        ---- >  check the user and database password and all
+                 -  var/www/html/magento_folder_name/nginx.conf.sample      ----->  check the memory code 
+                 -  other location --> computer  --> etc/hosts              -----> check the url is added or not 
+                 -  other location --> computer  --> etc/nginx              -----> check  file inside nginx 
+                 -  
+              
 
 
            Un-install
