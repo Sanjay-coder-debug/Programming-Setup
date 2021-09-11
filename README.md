@@ -325,10 +325,28 @@ Chrome
 
 ## Apache Command
 -----------------
-
-
-
-
+           General
+           ---------- 
+                        - whereis apache2                       - check the if furthur exist after uninstall
+                        - apache2 -v  || apache2 --version         
+                        - sudo service apache2 start
+                        - sudo service apache2 status
+                        - sudo service apache2 stop
+                        - systemctl status apache2.service
+                        - sudo systemctl enable apache2.service
+                        - sudo nano /etc/apache2/sites-available/magento2.conf
+                        - sudo a2enmod rewrite
+                        
+           Install
+           --------
+                     - sudo apt install apache2
+ 
+         Un-install
+         -----------
+                      - sudo apt-get purge apache2 apache2-utils apache2.2-bin apache2-common
+                      - sudo apt-get autoremove
+                      - sudo rm -rf /etc/apache2  
+                     
 
 
 ## Nginx Command 
