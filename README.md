@@ -468,6 +468,7 @@ Chrome
      Check The Version
      -----------------
                     - curl -XGET 'http://localhost:9200'
+                    - bin/elasticsearch --version
     
     
     Configuration Of Elastic Search in Magento2
