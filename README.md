@@ -465,6 +465,34 @@ Chrome
                   - /etc/init.d/elasticsearch restart
                   - /etc/init.d/elasticsearch force-reload
  
+     Check The Version
+     -----------------
+                    - curl -XGET 'http://localhost:9200'
+    
+    
+    Configuration Of Elastic Search in Magento2
+    -------------------------------------------
+                               - 
+                               - 
+                               - 
+                               -
+                               -
+                               
+                    
+    Use Of Elastic Search in Magento2
+    ---------------------------------
+                               - 
+                               - 
+                               - 
+                               - 
+                               - 
+                               
+    
+    
+    
+    
+    
+    
 
 
 
