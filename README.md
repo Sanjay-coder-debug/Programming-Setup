@@ -112,10 +112,15 @@ Framework : - :
                     - sudo chmod -R 777 var/ pub/ generated/        
                     - sudo bin/magento module:disable Codilar_Thor   - Disable any Module
                     - rm -rf FolderName   - To Remove any Folder 
+                    
+               
+               Set the Mode - Production and Development
+               -------------------------------------------
                     - bin/magento dep:mod:show
+                    - php bin/magento deploy:mode:set production
                     - sudo bin/magento de:mo:se developer
            Install
-           ---------
+           -------
                   step- 1
                   --------
                             - Check the System Requirement
