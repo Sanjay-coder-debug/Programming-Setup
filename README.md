@@ -206,6 +206,11 @@ Framework : - :
                  -  other location --> computer  --> etc/nginx              -----> check  file inside nginx 
                  -  
               
+              
+              
+              
+      Setup Database in Magento (If you have  Already Existing Project Setup and Also You Have Existing Database but You Forget Your Uname and PassWd )
+      -----------------------------------------------------------------------------------------------------------------------------------------------------
 
 
            Un-install
