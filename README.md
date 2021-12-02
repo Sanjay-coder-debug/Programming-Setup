@@ -227,6 +227,8 @@ Step -2
 Step -3
 -------
  - SELECT *FROM `core_config_data`WHERE (`scope` LIKE '%cookie%' OR `path` LIKE '%cookie%' OR `value` LIKE '%cookie%') LIMIT 50
+ - Change the Value -  web/cookie/cookie_domain  to / 
+ - Syntax to update => update core_config_data set value="/" where config_id = 102;
 
 
 
