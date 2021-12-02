@@ -214,19 +214,24 @@ Framework : - :
               
               
 Setup Database in Magento (If you have  Already Existing Project Setup and Also You Have Existing Database but You Forget Your Uname and PassWd )   
--------------------------------------------------------------------------------------------------------------------------------------------------tep - 
+------------------------------------------------------------------------------------------------------------------------------------------------
 
 Step-1
+-------
+  - bin/magento setup:install  --base-url=http://shopmonk.local/  --db-host=localhost  --db-name=rehandel  --db-user=magento  --db-password=Magento@123 --backend-frontname=admin  --admin-firstname=admin  --admin-lastname=admin  --admin-email=sanjay.d@codilar.com  --admin-user=admin1  --admin-password=admin123  --language=en_US  --currency=INR  --timezone=Asia/Kolkata  --use-rewrites=1
 
- - bin/magento setup:install  --base-url=http://shopmonk.local/  --db-host=localhost  --db-name=rehandel  --db-user=magento  --db-password=Magento@123 --backend-frontname=admin  --admin-firstname=admin  --admin-lastname=admin  --admin-email=sanjay.d@codilar.com  --admin-user=admin1  --admin-password=admin123  --language=en_US  --currency=INR  --timezone=Asia/Kolkata  --use-rewrites=1
+Step -2 
+--------
+ - sudo php bin/magento admin:user:create --admin-user='admin1' --admin-password='admin123' --admin-email='sanjay.d@codilar.com' --admin-firstname='Sanjay' --admin-lastname='Kumar'
+
+Step -3
+-------
+ - SELECT *FROM `core_config_data`WHERE (`scope` LIKE '%cookie%' OR `path` LIKE '%cookie%' OR `value` LIKE '%cookie%') LIMIT 50
 
 
--  
 
-
-
-           Un-install
-          ------------          
+ Un-install
+------------          
            
            
        
