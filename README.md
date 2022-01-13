@@ -460,6 +460,11 @@ Chrome
              - mysql -u username -p database_name < file.sql          -  Syntax for import existing database file                      - 
 
 
+      Export Database 
+      ----------------
+              - mysqldump -u magento -p rehandel > rehandel.sql
+              - mysqldump -u magento -p rehandel > rehandel.sql --single-transaction (If this command not run just try in (prem@sanjay:~/Downloads$) other path 
+
 
 
 
