@@ -274,7 +274,25 @@ IDE,EDITORS & Other
 
 ### Vs Code
 -------------------------
-                            - 
+
+    - Vs Code Setting
+    -----------------
+             For Tree View OF Files 
+             ----------------------
+                                 - Setting>Search Compact Folder > Un-Checked the Check Box
+                                 - Setting > Search Tree Indent 
+                                                      
+                
+            Codding Help Extensions
+            -----------------------
+                                  - Auto Rename Tag
+                                  - Live Server 
+                                  - Prettier - Code Formatter
+                                  - vscode-icons
+                                  - codeStackr Theme
+                                  - Fluent Icons
+                                  - 
+                         
 
 
 
