@@ -291,7 +291,9 @@ IDE,EDITORS & Other
                                   - vscode-icons
                                   - codeStackr Theme
                                   - Fluent Icons
-                                  - 
+                                  - Bracket Pair Colorizer
+                                  
+
                          
 
 
