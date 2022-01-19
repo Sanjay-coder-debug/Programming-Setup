@@ -65,7 +65,7 @@ Laravel Setup For Windows
 -------------------------
   Prerequisite For Laravel Install in Windows Os
   -----------------------------------------------
-         Method-1
+         Method-1 - https://www.youtube.com/watch?v=Czhoqx86V24&ab_channel=EduonixLearningSolutions
          =========
             Step-I
             -------
