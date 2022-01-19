@@ -69,7 +69,7 @@ Laravel Setup For Windows
          =========
             Step-I
             -------
-                       - Install Xampp
+                       - Install Xampp  - Apache will not work in new windows - https://stackoverflow.com/questions/27333203/xampp-couldnt-start-apache-windows-10
                        - Install Composer 
                        - Install Vs Code or Any Editor You Want
            Step-II
