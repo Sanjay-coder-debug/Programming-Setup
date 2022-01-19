@@ -38,20 +38,57 @@ Language :
 --------------
              - All Language Install and Setup
 
-### Java Command
+# Java Setup
 --------------------
+#Java Setup For Windows
+-----------------------
+ Basic Java Program Setup
+ -------------------------
+ - 
 
 
 
 
 
 
+#Php Setup
+----------
+# Php Setup for Windows
+------------------------
+Basic Php Program Setup Also For Project Setup Based on Core Php 
+-----------------------------------------------------------------
+                   - Install Xampp   
+                   - Install Vs Code or Atom or Sublime Text
+                   
+
+Laravel Setup For Windows
+-------------------------
+  Prerequisite For Laravel Install in Windows Os
+  -----------------------------------------------
+         Method-1
+         =========
+            Step-I
+            -------
+                       - Install Xampp
+                       - Install Composer 
+                       - Install Vs Code or Any Editor You Want
+           Step-II
+           -------
+                      - 
+                      - 
+                      - 
+                   
+
+
+
+# Php Setup For Ubuntu
+----------------------
 
 
 
 
-### Php Command
---------------------
+### Php Command For Ubuntu
+---------------------------
         General
         -------
            - php --version                              - Check Which Version php You have in your system
@@ -75,7 +112,8 @@ Language :
            - sudo apt-get install php7.4-common php7.4-xml php7.4-curl php7.4-bcmath php7.4-intl php7.4-gd php7.4-zip php7.4-mysql php7.4-soap php7.4-mbstring
            - sudo apt install php7.4-common php7.4-mysql php7.4 php7.4-cgi libapache2-mod-php7.4 php-pear php7.4-mbstring
            - ext-bcmath,ext-ctype,ext-curl,ext-dom,ext-gd,ext-hash,ext-iconv,ext-int,ext-mbstring,ext-openssl,ext-pdo_mysql,ext-simplexml,ext-soap,ext-xsl, ext-zip,              ext- sockets
-            
+           
+             
         Un-install
         -----------
              - sudo apt-get purge php7.*
@@ -545,10 +583,4 @@ Chrome
   
     
     
-    
-
-
-
-
-
-
+ 
