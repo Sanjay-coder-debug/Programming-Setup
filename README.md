@@ -225,7 +225,7 @@ Framework : - :
                                                       } 
                                                server {
                                                        listen 80;
-                                                       server_name local.test.com;
+                                                       server_name local.test.com or (server_name _;);
                                                        set $MAGE_ROOT /var/www/html/test;
                                                        set $MAGE_RUN_TYPE website;
                                                        include /var/www/html/test/nginx.conf.sample;
