@@ -509,8 +509,16 @@ Chrome
        
        Import Existing Database
        -------------------------
-             - mysql -u username -p database_name < file.sql          -  Syntax for import existing database file                      - 
-
+             - mysql -u username -p database_name < file.sql          -  Syntax for import existing database file    
+              - 
+       Import Other Way 
+       -----------------
+           - Download the Sql File 
+           - Go To that Directory 
+           - Open Terminal From That Directory
+           - Open MySql(mysql -u Username -pPassword)
+           - run the command  for import --->(source file.sql(only this name- rehnadel_22-02-14.sql ) not this name -> /home/prem/Desktop/rehnadel_22-02-14.sql
+           - source rehnadel_22-02-14.sql;
 
       Export Database 
       ----------------
