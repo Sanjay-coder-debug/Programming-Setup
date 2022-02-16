@@ -313,6 +313,10 @@ IDE,EDITORS & Other
 ### Vs Code
 -------------------------
 
+   Install Vs Code
+   -------------------
+       - sudo snap install code --classic 
+
     - Vs Code Setting
     -----------------
              For Tree View OF Files 
