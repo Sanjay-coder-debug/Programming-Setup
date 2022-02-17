@@ -437,7 +437,9 @@ Chrome
          -----------
                       - sudo apt-get purge apache2 apache2-utils apache2.2-bin apache2-common
                       - sudo apt-get autoremove
-                      - sudo rm -rf /etc/apache2  
+                      - sudo rm -rf /etc/apache2
+                      - sudo apt autoremove apache2
+                      
                      
 
 
