@@ -120,6 +120,8 @@ Laravel Setup For Windows
              - sudo apt-get autoclean
              - sudo apt-get autoremove
              - sudo apt autoremove
+             - sudo apt-get --purge remove apache2
+             
            
 
 ### Python Command
