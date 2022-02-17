@@ -316,9 +316,21 @@ IDE,EDITORS & Other
    Install Vs Code
    -------------------
        - sudo snap install code --classic 
+       
+       
+   Un-Install Vs Code
+   -------------------
+         - 
+         
+   
+   Git Configuration For Vs Code 
+   -----------------------------
+   
+   - 
+   
 
-    - Vs Code Setting
-    -----------------
+  Vs Code Setting
+  -----------------
              For Tree View OF Files 
              ----------------------
                                  - Setting>Search Compact Folder > Un-Checked the Check Box
