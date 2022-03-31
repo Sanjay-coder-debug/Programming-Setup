@@ -556,7 +556,11 @@ Chrome
 
 ### Docker Command
 --------------------
-
+- sudo docker compose ps                      -to check the details
+- sudo docker compose stop                    
+- sudo docker compose start  
+- sudo docker compose exec app bash           -go inside to magento directory
+- sudo docker compose exec mysql bash         -gi inside to mysql 
 
 
 
