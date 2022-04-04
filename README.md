@@ -250,6 +250,22 @@ Framework : - :
                  -  other location --> computer  --> etc/hosts              -----> check the url is added or not 
                  -  other location --> computer  --> etc/nginx              -----> check  file inside nginx 
                  -  
+                 
+             - Check with Error
+             ==================
+                         This site can’t be reached
+                          Check if there is a typo in magento.local.
+                          DNS_PROBE_FINISHED_NXDOMAIN.
+                          
+                            Solution - make sure you declare - url(http://name/) -In  etc—> hosts
+                            
+             -Check with This Error Also
+             ============================
+             Failed to send the message. Please contact the administrator
+              
+                            - Solution - bin/magento module:disable Magento_TwoFactorAuth
+                            
+
               
               
               
