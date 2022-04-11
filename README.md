@@ -576,7 +576,9 @@ Chrome
 - sudo docker compose stop                    
 - sudo docker compose start  
 - sudo docker compose exec app bash           -go inside to magento directory
-- sudo docker compose exec mysql bash         -gi inside to mysql 
+- sudo docker compose exec mysql bash         -go inside to mysql 
+- sudo docker volume ls                       - list all remaning container present in docker
+- sudo docker compose down
 
 
 
