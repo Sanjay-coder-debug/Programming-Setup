@@ -586,8 +586,8 @@ Chrome
 
 ### Elastic Search Command
 ---------------------------
-            General
-            --------
+      General
+      --------
                   - service elasticsearch status
                   - /etc/init.d/elasticsearch status
                   - /etc/init.d/elasticsearch start
@@ -604,6 +604,18 @@ Chrome
      -----------------
                     - curl -XGET 'http://localhost:9200'
                     - bin/elasticsearch --version
+    
+    
+     Install Command for Elasticsearch
+     ---------------------------------
+     - 
+     
+     
+     
+     
+     UnInstall Command For Elasticsearch
+     -----------------------------------
+     - 
     
     
     Configuration Of Elastic Search in Magento2
@@ -623,6 +635,36 @@ Chrome
                                - 
                                - 
                                
+### RabbitMQ Setup Command
+--------------------------                              
+           Install of RabbitMQ
+           -------------------
+                   - sudo apt install -y rabbitmq-server
+                   
+           
+           General Command
+           ---------------
+           
+           
+           
+           
+           Configure Command
+           -----------------
+           
+           
+           
+           
+           Un-Install Command
+           ------------------
+           
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
     
    #  Study Reff
      ------------
