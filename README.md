@@ -714,7 +714,7 @@ bin/magento setup:install --base-url=http://magento24.local/ --db-host=mysql  --
                                
 ### RabbitMQ Setup Command
 --------------------------                              
-           Install of RabbitMQ
+           Install of RabbitMQ   - All setup mention in given docs link only .
            -------------------
                    - sudo apt install -y rabbitmq-server
                    
@@ -730,10 +730,12 @@ bin/magento setup:install --base-url=http://magento24.local/ --db-host=mysql  --
            
            
            
-           Configure Command
-           -----------------
+           Configure With Magento Project
+           ------------------------------
+           Step -1
+           -------
            
-           - Open - Magento roject -- env.php  inside this file paste the below code
+           - Open - Magento Project Directory  -- Check with  env.php  inside this file paste the below code. for run RabbitMq wth Magento
                      
                           'queue' => [
                                      'amqp' => [
@@ -746,12 +748,17 @@ bin/magento setup:install --base-url=http://magento24.local/ --db-host=mysql  --
                                                ] 
                                       ],
                                       
-                            - after this run setup upgrade command in magento directory
-                            - open your local rabbitMQ and go to Queue check any queue you have or not 
+            Step -2
+            -------
+                      - after this run setup & upgrade command in magento directory.
+                      - open your local rabbitMQ and go to Queue check any queue you have or not.
                                       
            - Check the rabbitMQ is working or not 
            
                               - your project url and port number like - http://adobe.training:15672/
+                              - you may got this project used in some other location then kill the port.
+                                       Ex - npx kill-port 8080(put which port error is showing)
+                              
            
            Un-Install Command
            ------------------
