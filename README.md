@@ -641,6 +641,10 @@ Chrome
            -------------------
                    - sudo apt install -y rabbitmq-server
                    
+                   - https://tecadmin.net/install-rabbitmq-server-on-ubuntu/
+                   
+                   
+                   
            
            General Command
            ---------------
@@ -652,8 +656,25 @@ Chrome
            Configure Command
            -----------------
            
+           - Open - Magento roject -- env.php  inside this file paste the below code
+                     
+                          'queue' => [
+                                     'amqp' => [
+                                               'host' => '127.0.0.1',
+                                               'port' => '5672',
+                                               'user' => 'guest',
+                                               'password' => 'guest',
+                                               'virtualhost' => '/',
+                                               'ssl' => ''
+                                               ] 
+                                      ],
+                                      
+                            - after this run setup upgrade command in magento directory
+                            - open your local rabbitMQ and go to Queue check any queue you have or not 
+                                      
+           - Check the rabbitMQ is working or not 
            
-           
+                              - your project url and port number like - http://adobe.training:15672/
            
            Un-Install Command
            ------------------
