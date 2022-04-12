@@ -584,19 +584,17 @@ Chrome
 ====================================
 
   step -1
-  -------
           -  Download the sample docker file and extract in the desired location and   Rename the extracted folder to desired project name . 
            Link - https://drive.google.com/file/d/1WVtY4EUHqb0KQVWTH8kEzjjzkIP6QIh-/view?usp=sharing
            
   step -2
-  -------
+  
          - Delete the src folder which is inside the docker file and create a new fresh src folder.
            Ex:
                - sudo rm -rf src
                - sudo mkdir src
                
  step -3
- -------
          - Edit .env file , .application file and docker-compose.dev.yml files
 
                     - .env file change mysql version to 5.7 . 
@@ -609,14 +607,12 @@ Chrome
                      
                      
  step -4
- -------
            Run this docker build command :
                                            - sudo docker-compose -f docker-compose.dev.yml up -d --build .
                                             
                                               -  This command will build your all the container using “docker-compose.dev.yml ” file.
                                               
  step -5
- -------
                Now for get into the docker app container use this command.
                
                            -  " sudo docker-compose exec app bash" .
@@ -626,16 +622,13 @@ Chrome
                                             - sudo docker compose start    - make sure all the container are up (running)
                                             
 step -6
--------
                 - composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition:2.4.3-p1 .
 
                                         - This command will clone the particular magento project .
 
                                                          - In this command 2.4.3-p1 is the magento version.you can choose as per your need
                                                          
-step -7
--------
-                       
+step -7                
                - Run this command for magento installation :
                
                - Before run this command we need to create database as we need to use to install magento things 
@@ -643,22 +636,6 @@ step -7
                    - sudo docker compose exec mysql bash   - to go into mysql application  
                
 bin/magento setup:install --base-url=http://magento24.local/ --db-host=mysql  --db-name=magento --db-user=root --db-password=codilar -- admin-firstname=admin --admin-lastname=demo --admin-email=sachin@codilar.com --admin-user=sachin --admin-password=admin123 --language=en_US --currency=INR --timezone=Asia/Kolkata --use-rewrites=1 --search-engine=elasticsearch7 --elasticsearch-host=elasticsearch --elasticsearch-port=9200
-
-
-
-                                                                                     
-
-               
-
-
-
-  
-
-
-
-
-
-
 
 
 ### Elastic Search Command
@@ -764,8 +741,12 @@ bin/magento setup:install --base-url=http://magento24.local/ --db-host=mysql  --
            ------------------
            
                      
-                     
-                     
+
+## Setup - Xdebug in Magento Proect
+-----------------------------------
+
+                   - 
+                   
                      
                      
                      
