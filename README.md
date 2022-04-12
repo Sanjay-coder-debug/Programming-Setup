@@ -716,9 +716,9 @@ bin/magento setup:install --base-url=http://magento24.local/ --db-host=mysql  --
 --------------------------                              
            Install of RabbitMQ   - All setup mention in given docs link only .
            -------------------
-                   - sudo apt install -y rabbitmq-server
+                   - sudo apt install -y rabbitmq-server   - you can go this or you can go with below link
                    
-                   - https://tecadmin.net/install-rabbitmq-server-on-ubuntu/
+                                                                      - https://tecadmin.net/install-rabbitmq-server-on-ubuntu/
                    
                    
                    
