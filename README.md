@@ -644,6 +644,7 @@ Chrome
            
            General Command
            ---------------
+           - systemctl status rabbitmq-server
            
            
            
