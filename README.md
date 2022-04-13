@@ -727,49 +727,35 @@ bin/magento setup:install --base-url=http://magento24.local/ --db-host=mysql  --
                                       
             Step -2
             -------
-                      - after this run setup & upgrade command in magento directory.
-                      - open your local rabbitMQ and go to Queue check any queue you have or not.
-                                      
+                    - after this run setup & upgrade command in magento directory.
+                    - open your local rabbitMQ and go to Queue check any queue you have or not.
+                    
            - Check the rabbitMQ is working or not 
            
                               - your project url and port number like - http://adobe.training:15672/
                               - you may got this project used in some other location then kill the port.
                                        Ex - npx kill-port 8080(put which port error is showing)
-                              
-           
            Un-Install Command
            ------------------
            
-        
+           
 ## Install MailHog For Ubuntu -18.04 & Configure for Magento2
-============================================================= 
-
-
+=============================================================
     step -1
     ------- 
                 - Go with below link 
-                           - https://nishchay.io/blog/mailhog-installation-on-ubuntu
-                           
-                - Start Doing Setup From Step-2 From this Docs.
-                
-                
+                           - https://nishchay.io/blog/mailhog-installation-on-ubuntu                
     step -2
     -------
                - create one simple .php file which contain php mail() function and it have message
                - in your terminal anywhere you can  type - php file.php(this is the file you created as mention in above step)
                - Now Check in - mailHog Server you must recevice the mail 
-              
     step -3
     --------
                - I am going with  SMTP Extension for Sending mail (you can go with Other)
                - sudo composer require mageplaza/module-smtp    - install the SMTP
                - run se:up and ca:fl 
-             
-
                
-               
-        
-
 ## Setup - Xdebug in Magento Proect
 -----------------------------------
 
