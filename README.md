@@ -753,7 +753,21 @@ bin/magento setup:install --base-url=http://magento24.local/ --db-host=mysql  --
                 - Start Doing Setup From Step-2 From this Docs.
                 
                 
+    step -2
+    -------
+               - create one simple .php file which contain php mail() function and it have message
+               - in your terminal anywhere you can  type - php file.php(this is the file you created as mention in above step)
+               - Now Check in - mailHog Server you must recevice the mail 
               
+    step -3
+    --------
+               - I am going with  SMTP Extension for Sending mail (you can go with Other)
+               - sudo composer require mageplaza/module-smtp    - install the SMTP
+               - run se:up and ca:fl 
+             
+
+               
+               
         
 
 ## Setup - Xdebug in Magento Proect
