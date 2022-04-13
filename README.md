@@ -740,7 +740,21 @@ bin/magento setup:install --base-url=http://magento24.local/ --db-host=mysql  --
            Un-Install Command
            ------------------
            
-                     
+        
+## Install MailHog For Ubuntu -18.04 & Configure for Magento2
+============================================================= 
+
+
+    step -1
+    ------- 
+                - Go with below link 
+                           - https://nishchay.io/blog/mailhog-installation-on-ubuntu
+                           
+                - Start Doing Setup From Step-2 From this Docs.
+                
+                
+              
+        
 
 ## Setup - Xdebug in Magento Proect
 -----------------------------------
