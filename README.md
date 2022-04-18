@@ -373,7 +373,9 @@ IDE,EDITORS & Other
                          
 
 
-
+### Install Slack 
+-----------------
+             - sudo snap install slack
 
 
 ### PhpStrom
