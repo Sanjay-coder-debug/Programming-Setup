@@ -24,7 +24,23 @@ OS Installation
 
 
 ### Ubuntu Command
----------------------
+------------------
+                Basic 
+                       - ls
+                       - ll
+                       - clear
+                       - exit
+                       - ll -la
+                       - mkdir
+                       - rm -rf 
+                       - chmod -R 777 
+                       - sudo su
+                       - mv
+                       - cp
+                       - nano
+                       - cat 
+                       
+        
 
 
 ### Windos
@@ -743,9 +759,11 @@ bin/magento setup:install --base-url=http://magento24.local/ --db-host=mysql  --
            
 ## Install MailHog For Ubuntu -18.04 & Configure for Magento2
 =============================================================
+
+
     step -1
     ------- 
-                - Go with below link 
+                  - Go with below link 
                            - https://nishchay.io/blog/mailhog-installation-on-ubuntu                
     step -2
     -------
@@ -757,6 +775,8 @@ bin/magento setup:install --base-url=http://magento24.local/ --db-host=mysql  --
                - I am going with  SMTP Extension for Sending mail (you can go with Other)
                - sudo composer require mageplaza/module-smtp    - install the SMTP
                - run se:up and ca:fl 
+               
+               
                
 ## Setup - Xdebug in Magento Proect
 -----------------------------------
