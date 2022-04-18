@@ -760,8 +760,11 @@ bin/magento setup:install --base-url=http://magento24.local/ --db-host=mysql  --
                
 ## Setup - Xdebug in Magento Proect
 -----------------------------------
+                   - Go With Below link
 
-                   - 
+                   - https://www.linkedin.com/pulse/how-install-xdebug-config-phpstorm-ubuntu-jun-wu/
+
+
                    
                      
                      
