@@ -587,6 +587,20 @@ Chrome
 
 
 
+### Redis Installation
+----------------------
+
+
+
+
+### Varnish Installation
+------------------------
+
+
+
+
+
+
 
 ### Docker Command
 --------------------
