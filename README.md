@@ -561,6 +561,16 @@ Chrome
              - select user from mysql.user;
              - CREATE USER 'magento237'@'localhost' IDENTIFIED BY 'password';
              - GRANT ALL PRIVILEGES ON *.* TO 'magento237'@'localhost' WITH GRANT OPTION;
+             - FLUSH PRIVILEGES
+             - exit
+             
+      Mysql User error
+      ----------------
+           - SELECT user,authentication_string,plugin,host FROM mysql.user;
+           - ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '1234';
+           - FLUSH PRIVILEGES;
+
+             
        
        
        
