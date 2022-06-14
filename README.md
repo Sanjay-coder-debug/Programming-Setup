@@ -169,6 +169,29 @@ Framework : - :
                     - sudo bin/magento module:disable Codilar_Thor   - Disable any Module
                     - rm -rf FolderName   - To Remove any Folder 
                     
+             
+             Disable the module
+             ------------------
+                    -  sudo bin/magento module:disable Module_Name
+                    
+             
+             Magento Mode Show
+             -----------------
+                 - sudo php bin/magento deploy:mode:show
+                 - sudo php bin/magento deploy:mode:set production
+                 - php bin/magento deploy:mode:set developer
+                 - php bin/magento deploy:mode:set default
+               
+             (Or)
+                  - Go to - app/etc/env.php 
+                  -  'MAGE_MODE' => 'developer',    ------> here you need to specify - production, default
+             
+                   
+             Two Factor Authentication
+             -------------------------
+                    - bin/magento module:disable Magento_TwoFactorAuth
+                    - bin/magento cache:flush 
+                    
                
                Set the Mode - Production and Development
                -------------------------------------------
