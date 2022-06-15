@@ -41,6 +41,10 @@ OS Installation
                        - cat 
                        
         
+      Check Ubuntu version
+      --------------------
+            - lsb_release -a
+            
 
 
 ### Windos
