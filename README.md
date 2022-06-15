@@ -760,6 +760,10 @@ bin/magento setup:install --base-url=http://magento24.local/ --db-host=mysql  --
                                - 
                                - 
                                - 
+    Links:-
+    ------
+         - https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-elasticsearch-on-ubuntu-20-04
+         
                                
 ### RabbitMQ Setup Command
 --------------------------                              
