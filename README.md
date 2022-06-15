@@ -460,6 +460,13 @@ OpenSource Tools
             - sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
        Un-install
        -----------
+       
+     
+      Composer Self-Update to Other Version
+      -------------------------------------
+            - sudo composer self-update --1
+            - sudo composer self-update --2
+       
 
 ### Github , Gitlab , BitBucket
 -------------------------------------------
