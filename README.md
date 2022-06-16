@@ -234,6 +234,13 @@ Framework : - :
                 -----------------------------------------------
                 - bin/magento setup:install  --base-url=http://magento237.local/  --db-host=localhost  --db-name=magento  --db-user=magento237  --db- password=Sanjay1997@@ --backend-frontname=admin  --admin-firstname=admin  --admin-lastname=admin  --admin-email=devops1@codilar.com  --admin-user=admin1  --admin-password=admin123  --language=en_US  --currency=INR  --timezone=Asia/Kolkata  --use-rewrites=1
                 
+                
+                (Or)
+                
+                 - sudo bin/magento setup:install --base-url=http://casio.local/ --db-host=localhost --db-name=casio --db-user=root --db-password=1234 --admin-firstname=Sanjay --admin-lastname=Das --admin-email=cod34082@adobe.com --admin-user=sanjay --admin-password=sanjay123 --language=en_US --currency=USD --timezone=America/Chicago --use-rewrites=1 --search-engine=elasticsearch7 --elasticsearch-host=localhost --elasticsearch-port=9200
+                
+                
+                
            If You Want To Create New User For Magento
            --------------------------------------------- 
                -  php bin/magento admin:user:create --admin-user=local --admin-password=admin123 --admin-email=sanjay1@gmail.com --admin-firstname=admin --admin-lastname=admin
