@@ -477,6 +477,16 @@ OpenSource Tools
       -------------------------------------
             - sudo composer self-update --1
             - sudo composer self-update --2
+            
+            
+      Install Any Third Party Module using Composer
+      ---------------------------------------------
+      -    Here we need to Install this third party module   E.g -  amasty/promo "version": "2.9.7",
+      
+      By Terminal Way
+      ---------------
+      -    composer require amasty/promo:2.9.7
+      
        
 
 ### Github , Gitlab , BitBucket
