@@ -894,7 +894,9 @@ Installation Over Windos OS - Virtual Box , WSL, Hyper -v
 
    step -1
    -------
-               - 
+      -
+      ![step-1](https://user-images.githubusercontent.com/78407424/187947143-1be51869-df80-4cbe-93e7-9e8560568dac.png)
+
                - Checked the Hyper-V Option 
                
                - After checked the Option, It will as for System Restart -- So Restart the System
