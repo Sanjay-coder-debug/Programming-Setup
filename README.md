@@ -884,6 +884,24 @@ bin/magento setup:install --base-url=http://magento24.local/ --db-host=mysql  --
     
    -  https://www.emizentech.com/blog/magento-2-4-with-elasticsearch-complete-guide.html
   
+  
+  
+Installation Over Windos OS - Virtual Box , WSL, Hyper -v
+=========================================================
+
+#Installation of Magento Over Hyper-v Using Windows OS
+------------------------------------------------------
+
+   step -1
+   -------
+               - 
+  
+
+
+
+    
+    
+    
     
     
  
