@@ -344,6 +344,21 @@ Step -3
 Setup Multiple Website for Magento Like - Japan and Singapore
 =============================================================
 
+Link - https://www.youtube.com/watch?v=1HrOfr8e96A
+
+Store ----> All Store ----> 
+
+pub/index.php
+    switch($_SERVER['HTTP_HOST']) {
+    case 'http://casio-gshock-ecom.loc/':
+        $runCode = 'jp';
+        $websiteType = 'website';
+        break;
+    case 'http://casio-gshock-ecom.loc.sg/':
+        $runCode = 'sg';
+        $websiteType = 'website';
+        break;
+}
 
        
 IDE,EDITORS & Other
