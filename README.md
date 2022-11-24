@@ -350,19 +350,19 @@ Link - https://www.youtube.com/watch?v=1HrOfr8e96A
   
   pub/index.php
   
-   switch($_SERVER['HTTP_HOST']) {
-      case 'casio-gshock-ecom.loc':
-          $runCode = 'jp';
-          $websiteType = 'website';
-          break;
-      case 'casio-gshock-ecom.loc.sg':
-          $runCode = 'sg';
-          $websiteType = 'website';
-          break;
-   }
+  
+       switch($_SERVER['HTTP_HOST']) {
+            case 'casio-gshock-ecom.loc':
+                  $runCode = 'jp';
+                  $websiteType = 'website';
+                  break;
+           case 'casio-gshock-ecom.loc.sg':
+                  $runCode = 'sg';
+                  $websiteType = 'website';
+                  break;
+          }
    $params[\Magento\Store\Model\StoreManager::PARAM_RUN_CODE] = $runCode;
    $params[\Magento\Store\Model\StoreManager::PARAM_RUN_TYPE] = $websiteType;
-
 
 </details>  
 
