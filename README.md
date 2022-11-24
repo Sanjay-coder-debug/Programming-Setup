@@ -340,8 +340,11 @@ Step -3
 
  Un-install
 ------------          
-           
-           
+       
+Setup Multiple Website for Magento Like - Japan and Singapore
+=============================================================
+
+
        
 IDE,EDITORS & Other
 ===================
