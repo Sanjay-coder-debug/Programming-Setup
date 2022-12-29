@@ -926,6 +926,37 @@ Installation Over Windos OS - Virtual Box , WSL, Hyper -v
                
    step -2
    -------
+   
+   
+   Widows Problem
+   ==============
+   
+    # Get the Serial number of Windows
+          - open CMD as Administrator
+          - type - wmic bios get serialnumber
+          
+    # Format Pendrive
+          - open CMD as Administrator
+          - diskpart
+          - list disk
+          - select <disk-name>
+          - clean
+          - create partition primary
+          - format ft-ntfs
+          - assign
+     
+     # How to Open Bios Setting 
+      
+          - For Lenevo Ideapad Gamming 3
+                              - Function(Fn) + F2
+                              - Function(Fn) + F12
+                              
+                       
+   
+   
+   
+   
+   
   
 
 
