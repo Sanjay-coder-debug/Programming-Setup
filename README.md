@@ -950,7 +950,11 @@ Installation Over Windos OS - Virtual Box , WSL, Hyper -v
           - For Lenevo Ideapad Gamming 3
                               - Function(Fn) + F2
                               - Function(Fn) + F12
-                              
+
+Git - Issue
+-----------
+![Screenshot (706)](https://user-images.githubusercontent.com/78407424/209929916-1a35d1bf-f79e-41c9-add3-2b8fce252eba.png)
+
                        
    
    
