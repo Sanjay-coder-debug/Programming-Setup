@@ -950,6 +950,12 @@ Installation Over Windos OS - Virtual Box , WSL, Hyper -v
           - For Lenevo Ideapad Gamming 3
                               - Function(Fn) + F2
                               - Function(Fn) + F12
+                              
+    # Change the C Drive to D Drive CMD Way
+             - C:\Users\user>cd..
+             - C:\Users>cd ..
+             - C:\>D:
+             - D:\>cd \foldername
 
 Git - Issue
 -----------
