@@ -121,6 +121,10 @@ Laravel Setup For Windows
            - sudo service php7.3-fpm start
            - sudo service php7.4-fpm status
            - sudo service php7.4-fpm stop
+           
+           
+           
+           Link - https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/php-settings.html
 
            
         Install
