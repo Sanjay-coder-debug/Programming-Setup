@@ -125,6 +125,8 @@ Laravel Setup For Windows
            
            
            Link - https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/php-settings.html
+           
+           Devdocs - https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/overview.html
 
            
         Install
