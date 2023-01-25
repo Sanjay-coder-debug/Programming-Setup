@@ -213,7 +213,7 @@ Framework : - :
                   step- 1
                   --------
                             - Check the System Requirement
-                            ![system_requirement](https://user-images.githubusercontent.com/78407424/214648042-1c3402e0-a58d-4069-8df1-d93aa1a6e793.png)
+![system_requirement](https://user-images.githubusercontent.com/78407424/214648042-1c3402e0-a58d-4069-8df1-d93aa1a6e793.png)
 
                             
                  step- 2
