@@ -508,9 +508,11 @@ OpenSource Tools
             - cd
             - pwd
             - check the php must be install
+            - Some time - By default it will install composer version -1 so you need to un-install the version-1 and again need to install 
         Install
         ---------
-            - https://getcomposer.org/download/  - official site for download 
+            - sudo apt install composer          - when you run this one it will install composer version -1 
+            - https://getcomposer.org/download/  - official site for install (when you run this one it will install composer version -2)
             
            ( or)
             - sudo apt install unzip
