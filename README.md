@@ -191,6 +191,10 @@ Framework : - :
 
 ### Magento
 -------------
+            Link Official
+            -------------
+                      - https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/composer.html?lang=en
+                      
              General
              ---------
                     - sudo php bin/magento setup:upgrade
