@@ -237,12 +237,21 @@ Framework : - :
                        
                 step-3
                 -------
-                Database Setup  (Both for Local and Project)
-                -----------------------------------------------
+                Database Setup  (For Local)
+                ---------------------------
                 - bin/magento setup:install  --base-url=http://magento237.local/  --db-host=localhost  --db-name=magento  --db-user=magento237  --db- password=Sanjay1997@@ --backend-frontname=admin  --admin-firstname=admin  --admin-lastname=admin  --admin-email=devops1@codilar.com  --admin-user=admin1  --admin-password=admin123  --language=en_US  --currency=INR  --timezone=Asia/Kolkata  --use-rewrites=1
                 
+                If You are Doing Project Setup 
+                ------------------------------
+                - Just need to check the core_Config_table and update the url 
+                - Also some time need to check with other files aslo
+                       - SELECT * FROM core_config_data where path like '%web/secure/use_in_adminhtml%';
+                       - select *from core_config_data where path="web/cookie/cookie_domain"; 
+                       - update core_config_data set value="http://southsmoke.local/admin/" where config_id=2762; 
+                       - update core_config_data set value="http://southsmoke.local/static/" where value="http://alfakher.com/static/";
+              
                 
-                (Or)
+                (Or) If Elasticsearch configuration needed 
                 
                  - sudo bin/magento setup:install --base-url=http://casio.local/ --db-host=localhost --db-name=casio --db-user=root --db-password=1234 --admin-firstname=Sanjay --admin-lastname=Das --admin-email=cod34082@adobe.com --admin-user=sanjay --admin-password=sanjay123 --language=en_US --currency=USD --timezone=America/Chicago --use-rewrites=1 --search-engine=elasticsearch7 --elasticsearch-host=localhost --elasticsearch-port=9200
                 
