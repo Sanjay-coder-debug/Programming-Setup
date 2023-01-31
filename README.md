@@ -254,6 +254,12 @@ Framework : - :
                         - composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition:2.3.7-p1 .
                         - composer create-project --repository=https://repo.magento.com/ magento/project-community-edition:2.3.7 Magento237(your folder name)
                         
+                 
+                 Latest version
+                 --------------
+                       - sudo composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition:2.4.5-p1 local/
+
+                 
                   (Or)
                   
                      If You Want To Setup  For Project
