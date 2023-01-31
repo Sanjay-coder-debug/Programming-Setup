@@ -134,12 +134,35 @@ Laravel Setup For Windows
            - sudo apt install software-properties-common
            - sudo add-apt-repository ppa:ondrej/php
            - sudo apt-get update
-           - sudo apt install php7.4 || sudo apt install php7.3  || sudo apt install php - choose your version
+           - sudo apt install php8.1 || sudo apt install php7.4 || sudo apt install php7.3  || sudo apt install php - choose your version
            - sudo apt-get install php7.4-common php7.4-xml php7.4-curl php7.4-bcmath php7.4-intl php7.4-gd php7.4-zip php7.4-mysql php7.4-soap php7.4-mbstring
            - sudo apt install php7.4-common php7.4-mysql php7.4 php7.4-cgi libapache2-mod-php7.4 php-pear php7.4-mbstring
            - ext-bcmath,ext-ctype,ext-curl,ext-dom,ext-gd,ext-hash,ext-iconv,ext-int,ext-mbstring,ext-openssl,ext-pdo_mysql,ext-simplexml,ext-soap,ext-xsl, ext-zip,              ext- sockets
            
-             
+           
+           Install Php8.1
+           ==============
+                      - sudo apt install --no-install-recommends php8.1
+                                - The --no-install-recommends flag will ensure that other packages like the Apache web server are not installed.
+                      
+           Related Package Php8.1
+           ----------------------
+             - sudo apt install php8.1-extension_name
+             - sudo apt-get install -y php8.1-cli php8.1-common php8.1-mysql php8.1-zip php8.1-gd php8.1-mbstring php8.1-curl php8.1-xml php8.1-bcmath
+         
+         
+        Configure Php8.X File 
+        ---------------------
+                - sudo nano /etc/php/8.1/apache2/php.ini    - open this file 
+                 
+                 - upload_max_filesize = 32M 
+                 - post_max_size = 48M 
+                 - memory_limit = 256M 
+                 - max_execution_time = 600  
+                 - max_input_vars = 3000 
+                 - max_input_time = 1000
+                
+         
         Un-install
         -----------
              - sudo apt-get purge php7.*
@@ -147,7 +170,8 @@ Laravel Setup For Windows
              - sudo apt-get autoremove
              - sudo apt autoremove
              - sudo apt-get --purge remove apache2
-             
+       
+       
            
 
 ### Python Command
@@ -288,16 +312,17 @@ Framework : - :
               - sudo nano magento237(folder_name)                                       - Need To Open this file or as same for other magento file
               
              - Check The Below Format
-                                      upstream fastcgi_backend {
-                                                         server unix:/run/php/php7.4-fpm.sock;
-                                                      } 
-                                               server {
-                                                       listen 80;
-                                                       server_name local.test.com or (server_name _;);
-                                                       set $MAGE_ROOT /var/www/html/test;
-                                                       set $MAGE_RUN_TYPE website;
-                                                       include /var/www/html/test/nginx.conf.sample;
-                                                     }
+                                      upstream fastcgi_backend 
+                                      {
+                                         server unix:/run/php/php7.4-fpm.sock;
+                                       } 
+                                         server {
+                                             listen 80;
+                                             server_name local.test.com or (server_name _;);
+                                             set $MAGE_ROOT /var/www/html/test;
+                                             set $MAGE_RUN_TYPE website;
+                                             include /var/www/html/test/nginx.conf.sample;
+                                         }
                                          
                                          
                                          
