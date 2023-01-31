@@ -510,11 +510,19 @@ OpenSource Tools
             - check the php must be install
         Install
         ---------
+            - https://getcomposer.org/download/  - official site for download 
+            
+           ( or)
             - sudo apt install unzip
             - curl -sS https://getcomposer.org/installer -o composer-setup.php
             - sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
        Un-install
-       -----------
+       ----------
+            - sudo apt-get remove composer
+            - sudo apt-get autoremove composer
+            - sudo apt-get purge composer
+            - sudo apt-get autoremove --purge composer
+            
        
      
       Composer Self-Update to Other Version
