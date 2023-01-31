@@ -348,7 +348,17 @@ Framework : - :
                  -  other location --> computer  --> etc/hosts              -----> check the url is added or not 
                  -  other location --> computer  --> etc/nginx              -----> check  file inside nginx 
                  -  
-                 
+              
+              
+           For Fresh Setup
+          ---------------
+            - after giving composer comand you will get error like  - Could not find package magento/project-community-edition with version 2.4.5-p2.
+                    |
+                    -----Here simple it means - you are trying for enterprise edition or patch)p1/p2) which is not available 
+                    |
+                    ----- some time need to use sudo for permission issue(to write and execute that installation folder)
+              
+              
              - Check with Error
              ==================
                          This site can’t be reached
