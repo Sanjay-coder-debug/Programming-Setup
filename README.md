@@ -521,6 +521,7 @@ IDE,EDITORS & Other
 Install Phpstrom
 -----------------
           - https://snapcraft.io/phpstorm
+          - https://github.com/RisesunStudios/ide-eval-resetter    --  Phpstorm reset eval
           - sudo snap install phpstorm --classic
           - sudo snap install phpstorm --channel=2020.3/stable --classic
   
