@@ -472,6 +472,9 @@ IDE,EDITORS & Other
 
 ### Vs Code
 -------------------------
+  Best Extension for Vs Code
+  ---------------------------
+       - 
 
    Install Vs Code
    -------------------
@@ -521,11 +524,19 @@ IDE,EDITORS & Other
 Install Phpstrom
 -----------------
           - https://snapcraft.io/phpstorm
-          - https://github.com/RisesunStudios/ide-eval-resetter    --  Phpstorm reset eval
+          - https://github.com/RisesunStudios/ide-eval-resetter            --  Phpstorm reset eval
           - sudo snap install phpstorm --classic
-          - sudo snap install phpstorm --channel=2020.3/stable --classic
+          - sudo snap install phpstorm --channel=2020.3/stable --classic   --  Specific version 
   
           - sudo snap remove phpstorm
+          
+          
+         
+Usefull Extension for PhpStorm
+------------------------------
+
+
+          
           
 Completly Uninstall PhpStrom
 ----------------------------
