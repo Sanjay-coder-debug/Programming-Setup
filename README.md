@@ -520,7 +520,9 @@ IDE,EDITORS & Other
 -------------------------
 Install Phpstrom
 -----------------
+          - https://snapcraft.io/phpstorm
           - sudo snap install phpstorm --classic
+          - sudo snap install phpstorm --channel=2020.3/stable --classic
   
           - sudo snap remove phpstorm
           
