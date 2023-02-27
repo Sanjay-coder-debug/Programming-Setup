@@ -123,6 +123,7 @@ Laravel Setup For Windows
            - sudo service php7.4-fpm stop
            
            
+           Php 8.1 = https://medium.com/@laraveltuts/how-to-install-and-run-php-8-x-on-ubuntu-20-04-8f18e7565c41
            
            Link - https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/php-settings.html
            
