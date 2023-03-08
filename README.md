@@ -790,6 +790,12 @@ Chrome
 - sudo docker volume ls                       - list all remaning container present in docker
 - sudo docker compose down
 
+
+#### Copy any File from Desktop to Inside  Docker
+ ---------------------------------------------
+   - docker cp file.sql container_id:/custom_name.sql
+
+
 ## Install Magento Using Docker Way
 ====================================
 
