@@ -1081,7 +1081,21 @@ Git - Issue
 ----------------------------------------------------------
 
 
-    
+## Windows Setup
+
+#### Xampp Isuue
+
+          Mysql is Not Starting in Xampp
+          ------------------------------
+                - It is not working because  If 3306 port already used (may be another mysql is available)
+                - Open C:\xampp\phpMyAdmin ==> config.inc
+                                                   |--------> $cfg['Servers'][$i]['AllowNoPassword'] = true;  add below line after this line
+                                                   |--------> $cfg['Servers'][$i]['port'] = 3308;
+               - Open  Xampp Panel ---> Near Start/Stop ---> Admin --> Config
+                                                                         |------ Click on This 
+                                                                                           |---- It will show my.ini file 
+                                                                                                           |-----Here change the Port 3306 to 3308
+               
     
     
     
