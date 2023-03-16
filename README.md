@@ -761,7 +761,9 @@ Chrome
               - mysqldump -u magento -p rehandel > rehandel.sql
               - mysqldump -u magento -p rehandel > rehandel.sql --single-transaction (If this command not run just try in (prem@sanjay:~/Downloads$) other path 
 
-
+      Install Mysql work Bench Ubuntu
+      -------------------------------
+       - sudo snap install mysql-workbench-community
 
 
 
