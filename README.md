@@ -1100,6 +1100,27 @@ Git - Issue
                
     
     
-    
-    
+  
+  
+## Magento Codding Standard
+<details><summary><b>Info</b></summary>
+	    
+		 - https://magefan.com/blog/magento-extension-code-quality
+	       
+	 Way -1
+	 ======
+		 Go to /var/www/html 
+		  ===================
+		      - git clone https://github.com/magento/magento-coding-standard.git
+		      - cd magento-coding-standard
+		      - composer install
+	 
+		 If Permission issue
+		         sudo chmod -R 777 /var/www/html/magento-coding-standard
+	 
+		  Check the Particular Module
+		  ---------------------------
+		     - vendor/bin/phpcs /path/to/your/extension --standard=Magento2 > log.txt  ---> syntax for Check standard
+	     
+		    - vendor/bin/phpcs /var/www/html/marina/app/code/Codilar/CustomRestApi --standard=Magento2 > log.txt   --- log.txt (all errors)
  
