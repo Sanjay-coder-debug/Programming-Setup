@@ -1231,4 +1231,27 @@ Git - Issue
 
 
 ### Varnish	
+
+
+
+### STMP Setup for Magento 
+
+         - Magento Market Place (https://marketplace.magento.com/)
+	 
+                        Public Key   = 27f19ff144e9ec3b7a66a844feb13a4f
+                        Private Key  = e435d9f2831d076f07f6a5666ecc0c27
+			
+			
+	 - 		
+			
+	
+
+
+### Sample Date Setup For Magento 
+
+
+
+
+
+
 	
