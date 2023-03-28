@@ -283,6 +283,8 @@ Framework : - :
                 ------------------------------
                 - Just need to check the core_Config_table and update the url 
                 - Also some time need to check with other files aslo
+		       - select *from core_config_data where path like "%base_url%";
+		       - select *from core_config_data where path like "%secure%";
                        - SELECT * FROM core_config_data where path like '%web/secure/use_in_adminhtml%';
                        - select *from core_config_data where path="web/cookie/cookie_domain"; 
                        - update core_config_data set value="http://southsmoke.local/admin/" where config_id=2762; 
