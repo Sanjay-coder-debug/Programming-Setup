@@ -1099,9 +1099,16 @@ Git - Issue
                                                                          |------ Click on This 
                                                                                            |---- It will show my.ini file 
                                                                                                            |-----Here change the Port 3306 to 3308
-               
-    
-    
+                   
+  #### Wordpress Installation Issue
+      
+           If you changed the port number (like - 3308) then you will get below error (Open C:\xampp\phpMyAdmin ==> config.inc here you will get port number)
+	   --------------------------------------------------------------------------------------------------------------------------------------------------
+	    - Error establishing a database connection, XAMPP
+                     
+	     Solution - 	 in username field put = localhost:3308    
+  
+  
   
   
 ## Magento Codding Standard
