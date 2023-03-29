@@ -1138,34 +1138,37 @@ Git - Issue
          
        PSR1/PSR2
        =========
-         - Open PhpStorm -> Go To Files ->Setting -> Search for Php->Code Style->Php--> Right Side corner->Set From -->Select the Coding Standard.
+       	- Open PhpStorm -> Go To Files ->Setting -> Search for Php->Code Style->Php--> Right Side corner->Set From -->Select the Coding Standard.
+
+</details>	
 	
-### Magento Tools Setup
+# Magento Tools Setup
 	
-	### MailHog
-<details>
-    <i> Referecne docs - https://www.rakeshjesadiya.com/install-mailhog-in-ubuntu-php-environment/ </i>
-     
-  Step-1
-  -------
+### MailHog
+ <details>
+	
+     <i> Referecne docs - https://www.rakeshjesadiya.com/install-mailhog-in-ubuntu-php-environment/ </i>
+	
+   	 Step-1
+  	 -------
           - Common Directory
           - sudo apt-get update
           - sudo apt-get install golang-go
            
-  Step-2
-  -------
+ 	 Step-2
+  	 -------
           - Install MailHog = go get github.com/mailhog/MailHog
           - Install mhsendmail = go get github.com/mailhog/mhsendmail
           
-  Step-3
-  ------
+ 	 Step-3
+         ------
          - echo "$USER"    - For check the User (Which user name of system)
          
          - sudo cp /home/{system_user}/go/bin/MailHog /usr/local/bin/mailhog         - sudo cp /home/sanjay/go/bin/MailHog /usr/local/bin/mailhog 
          - sudo cp /home/{system_user}/go/bin/mhsendmail /usr/local/bin/mhsendmail   - sudo cp /home/sanjay/go/bin/mhsendmail /usr/local/bin/mhsendmail
          
-  Step-4
-  ------
+  	Step-4
+  	------
          - Now Modify the php.ini to setup MailHog path
               |
               |---I am working with PHP 7.4 version, So My  php.ini path location would be  /etc/php/7.4/fpm/php.ini
@@ -1175,9 +1178,10 @@ Git - Issue
           - Now update ;sendmail_path = with the given line. Remove the semicolon from the starting and update the path,
                - sendmail_path = /usr/local/bin/mhsendmail     
                
-          - If not Work add path to  PHP - CLI  also and Restart the FPM (sudo service php7.4-fpm restart)     
-   Step-5
-   ------
+          - If not Work add path to  PHP - CLI  also and Restart the FPM (sudo service php7.4-fpm restart)   
+	
+   	Step-5
+   	------
           - To Start the Mailhoh is Working or not 
              
                    - run   =  mailhog
@@ -1189,22 +1193,19 @@ Git - Issue
                                                           |----http://blank.m24.test:8025/
                                                           |----http://fresh.local:8025/
                                                             
-   Step-6
-   -------
+   	Step-6
+   	-------
             - Now Click on Enable Jim
             
-            - Place one Order from magento side and check the mailHog
-            
+            - Place one Order from magento side and check the mailHog 
          
-          "Congradulations -- Finally You Setup MailHog"  - If any Error Take Help of Google
-               
+            "Congradulations -- Finally You Setup MailHog"  - If any Error Take Help of Google
   
 </details>
 	
 ### Composer
 <details>
     <i> Composer.json Vs Composer.lock </i>
-
 
      - Doing some Changes on Module 
               |--------------------Creating Pr -- Pr got Merged ---> Create new Tag after PR Merged   - tag-1.0.2
@@ -1221,12 +1222,12 @@ Git - Issue
 <details>
     <i> Composer Install  vs Composer Update </i>
                                                                       
-      Composer Install
+       Composer Install
        ----------------
           - When we run composer install  - it will check the composer file and generate the composer.lock file 
        
-      Composer Update
-      ----------------
+       Composer Update
+       ----------------
           composer.json  --  when we run composer update it will take all the updated version version mention in composer.json into composer.lock 
     
 </details>   
@@ -1298,12 +1299,7 @@ Git - Issue
                 Search on google 
                     |--- app password gmail (create one)
   						
-</details>			
-			
-			
-			
-			
-	 - 		
+</details>					
 			
 	
 
