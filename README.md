@@ -981,33 +981,9 @@ bin/magento setup:install --base-url=http://magento24.local/ --db-host=mysql  --
                - I am going with  SMTP Extension for Sending mail (you can go with Other)
                - sudo composer require mageplaza/module-smtp    - install the SMTP
                - run se:up and ca:fl 
-               
-               
-               
-## Setup - Xdebug in Magento Proect
------------------------------------
-
-                  Xdebug Setup in Local
-                  ----------------------
-  
-                       - https://devdocs.magento.com/cloud/howtos/debug.html
-                       
-                  
-     
-                   - Go With Below link
-
-                   - https://www.linkedin.com/pulse/how-install-xdebug-config-phpstorm-ubuntu-jun-wu/
-
-
-                   
-                     
-                     
-                     
-                     
-                     
     
-   #  Study Reff
-     ------------
+# Study Reff
+------------
     
    -  https://www.emizentech.com/blog/magento-2-4-with-elasticsearch-complete-guide.html
   
@@ -1016,8 +992,7 @@ bin/magento setup:install --base-url=http://magento24.local/ --db-host=mysql  --
 Installation Over Windos OS - Virtual Box , WSL, Hyper -v
 =========================================================
 
-#Installation of Magento Over Hyper-v Using Windows OS
-------------------------------------------------------
+## Installation of Magento Over Hyper-v Using Windows OS
 
    step -1
    -------
@@ -1031,8 +1006,8 @@ Installation Over Windos OS - Virtual Box , WSL, Hyper -v
    -------
    
    
-   Widows Problem
-   ==============
+Widows Problem
+==============
    
     # Get the Serial number of Windows
           - open CMD as Administrator
@@ -1084,11 +1059,10 @@ Git - Issue
 #Installation of Magento Over Virtual-Box Using Windows OS
 ----------------------------------------------------------
 
-
 ## Windows Setup
 
 #### Xampp Isuue
-
+<details><summary><b>Info</b></summary>
           Mysql is Not Starting in Xampp
           ------------------------------
                 - It is not working because  If 3306 port already used (may be another mysql is available)
@@ -1097,49 +1071,52 @@ Git - Issue
                                                    |--------> $cfg['Servers'][$i]['port'] = 3308;
                - Open  Xampp Panel ---> Near Start/Stop ---> Admin --> Config
                                                                          |------ Click on This 
-                                                                                           |---- It will show my.ini file 
-                                                                                                           |-----Here change the Port 3306 to 3308
+                                                                                     |---- It will show my.ini file 
+											|-----Here change the Port 3306 to 3308
+</details>
                    
-  #### Wordpress Installation Issue
-      
-           If you changed the port number (like - 3308) then you will get below error (Open C:\xampp\phpMyAdmin ==> config.inc here you will get port number)
-	   --------------------------------------------------------------------------------------------------------------------------------------------------
+#### Wordpress Installation Issue
+<details><summary><b>Info</b></summary>
+            - If you changed the port number (like - 3308) then you will get below error 
+                   (Open C:\xampp\phpMyAdmin ==> config.inc here you will get port number)
+	       
 	    - Error establishing a database connection, XAMPP
                      
 	     Solution - 	 in username field put = localhost:3308    
   
-  
+</details> 
   
   
 ## Magento Codding Standard
+
 <details><summary><b>Info</b></summary>
 	    
-		 - https://magefan.com/blog/magento-extension-code-quality
+ 	- https://magefan.com/blog/magento-extension-code-quality
 	       
 	 Way -1
-	 ======
-		 Go to /var/www/html 
-		  ===================
-		      - git clone https://github.com/magento/magento-coding-standard.git
-		      - cd magento-coding-standard
-		      - composer install
+	 ------
+	 Go to /var/www/html 
+	 -------------------
+	      - git clone https://github.com/magento/magento-coding-standard.git
+	      - cd magento-coding-standard
+	      - composer install
 	 
-		 If Permission issue
-		         sudo chmod -R 777 /var/www/html/magento-coding-standard
+	 If Permission issue
+		 sudo chmod -R 777 /var/www/html/magento-coding-standard
 	 
-		  Check the Particular Module
-		  ---------------------------
-		     - vendor/bin/phpcs /path/to/your/extension --standard=Magento2 > log.txt  ---> syntax for Check standard
-	     
-		    - vendor/bin/phpcs /var/www/html/marina/app/code/Codilar/CustomRestApi --standard=Magento2 > log.txt   --- log.txt (all errors)
-       Direct Command
-       ==============
-            - ./vendor/bin/phpcs --standard=./dev/tests/static/framework/Magento/ruleset.xml app/code/CasioSingapore/   
+	  Check the Particular Module
+	  ---------------------------
+	     - vendor/bin/phpcs /path/to/your/extension --standard=Magento2 > log.txt  ---> syntax for Check standard
+	     - vendor/bin/phpcs /var/www/html/marina/app/code/Codilar/CustomRestApi --standard=Magento2 > log.txt   --- log.txt (all errors)
+	
+      	 Direct Command
+         --------------
+    	     - ./vendor/bin/phpcs --standard=./dev/tests/static/framework/Magento/ruleset.xml app/code/CasioSingapore/   
          
-       PSR1/PSR2
-       =========
-       	- Open PhpStorm -> Go To Files ->Setting -> Search for Php->Code Style->Php--> Right Side corner->Set From -->Select the Coding Standard.
-
+	 PSR1/PSR2
+         ----------
+	- Open PhpStorm -> Go To Files ->Setting -> Search for Php->Code Style->Php--> Right Side corner->Set From -->Select the Coding Standard.
+	
 </details>	
 	
 # Magento Tools Setup
@@ -1246,7 +1223,7 @@ Git - Issue
 
 ### STMP Setup for Magento 
 
-<details> <i>Info</i>
+<details>
 					
          SMTP Installation For Magento - 2
          ----------------------------------
@@ -1301,8 +1278,34 @@ Git - Issue
   						
 </details>					
 			
+               
+### Setup - Xdebug in Magento Proect
+<details>
+        Xdebug Setup in Local
+        ----------------------
+              - https://devdocs.magento.com/cloud/howtos/debug.html
+              - Go With Below link
+                     |
+	             |- https://www.linkedin.com/pulse/how-install-xdebug-config-phpstorm-ubuntu-jun-wu/
 	
-
+	
+	Steps - 1
+	-----
+	
+	Step -2 
+	----
+	
+	Step -3
+	----
+	
+	Step -4
+	----
+	
+	Step -5
+	----
+	
+	
+</details>
 
 ### Sample Date Setup For Magento 
 
