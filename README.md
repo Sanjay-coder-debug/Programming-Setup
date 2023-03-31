@@ -1290,9 +1290,9 @@ Git - Issue
 </details>
 
 <details>
-Step - 1
-========
-
+	
+      Step - 1
+      ========
        check php version    
                     |
                     |- php -v
@@ -1307,133 +1307,127 @@ Step - 1
       
                     
 
-Step -2
-=======                    
+       Step -2
+       =======                    
 
-   Install Xdebug 
-      |
-      |-- sudo apt-get install xdebug 
-      |-- sudo apt-get install php-dev
-      |-- sudo pecl install xdebug
-      |
-      |  (If abouve 3 command way not work)
-      | 
-      |- sudo apt-get install php-xdebug
-      |  (or)
-      |- sudo apt-get install php7.4-xdebug   (As Per Php Version )
+       Install Xdebug 
+          |
+          |-- sudo apt-get install xdebug 
+          |-- sudo apt-get install php-dev
+          |-- sudo pecl install xdebug
+          |
+          |  (If abouve 3 command way not work)
+          | 
+          |- sudo apt-get install php-xdebug
+          |  (or)
+          |- sudo apt-get install php7.4-xdebug   (As Per Php Version )
                     
 
-Step -3
-=======
-      
-      Find all php.ini files (For our understanding only)
-        |
-        |--- sudo find / -name php.ini
+        Step -3
+        ======= 
+         Find all php.ini files (For our understanding only)
+          |
+          |--- sudo find / -name php.ini
 
 
-Step - 4
-========
-  Configure for php.ini File
-  -----------------------------     
-    Open php.ini file and add below lines (FPM)
-    -------------------------------------------
-        |
-        |
-         where you will get php.ini file
-           |
-           |----/etc/php/7.4/fpm (where do "ls") (i am using php version 7.4)
+       Step - 4
+       ========
+       Configure for php.ini File
+       -----------------------------     
+          Open php.ini file and add below lines (FPM)
+          -------------------------------------------
+             |
+             |
+             |--where you will get php.ini file
+                 |
+                 |----/etc/php/7.4/fpm (where do "ls") (i am using php version 7.4)
                           |
                           |------- cat php.ini  (sudo nano php.ini )
                           
       
       
       
-      ; If you use constants in your value, and these constants belong to a
-      ; dynamically loaded extension (either a PHP extension or a Zend extension),
-      ; you may only use these constants *after* the line that loads the extension.
+         ; If you use constants in your value, and these constants belong to a
+         ; dynamically loaded extension (either a PHP extension or a Zend extension),
+         ; you may only use these constants *after* the line that loads the extension.
                                                     |
                                                     |
                                                     |------------------> after this line paste below line
-                
-      zend_extension=/usr/lib/php/20190902/xdebug.so
+                                                                               |
+                                                                               |--- zend_extension=/usr/lib/php/20190902/xdebug.so
           
       
-   At the end add below lines
-   --------------------------
-      
-      [xdebug]
-      zend_extension="/usr/lib/php/20190902/xdebug.so"
-      xdebug.mode=debug
-      xdebug.client_host=127.0.0.1
-      xdebug.client_port=9003
-      xdebug.start_with_request="yes"
+        At the end add below lines
+        --------------------------  
+           [xdebug]
+           zend_extension="/usr/lib/php/20190902/xdebug.so"
+           xdebug.mode=debug
+           xdebug.client_host=127.0.0.1
+           xdebug.client_port=9003
+           xdebug.start_with_request="yes"
 
        
        
-Step -5
-=======
-  
-  Configure for xdebug.ini File
-  -----------------------------
-     Open xdebug.ini add below line (in mycase file name is something like this - 20-xdebug.ini)
-     -------------------------------------------------------------------------------------------
-          |
-          |
-           where you will get xdebug.ini file
-             |
-             |-- etc/php/7.4/fpm/conf.d (here i am using php7.4)
-                           |
-                           |------- cat xdebug.ini (sudo nano 20-xdebug.ini)
+        Step -5  
+        ======= 
+          Configure for xdebug.ini File
+          -----------------------------
+              Open xdebug.ini add below line (in mycase file name is something like this - 20-xdebug.ini)
+              -------------------------------------------------------------------------------------------
+               |
+               |
+               |-- where you will get xdebug.ini file
+                     |
+                     |-- etc/php/7.4/fpm/conf.d (here i am using php7.4)
+                              |
+                              |------- cat xdebug.ini (sudo nano 20-xdebug.ini)
                            
                            
-     Add below lines
-     ---------------         
-        zend_extension="/usr/lib/php/20190902/xdebug.so"
-        xdebug_mode="debug"
-        xdebug.client_port=9003
-        xdebug.start_request="yes"
+           Add below lines
+           ---------------         
+             zend_extension="/usr/lib/php/20190902/xdebug.so"
+             xdebug_mode="debug"
+             xdebug.client_port=9003
+             xdebug.start_request="yes"
                                                                      
                                                                        
-Step -6
-=======   
-
-   i)
-       File
-           |---Settings
-                  |-----PHP
-                          |----- PHP language level -------- already default value will be there 
-                          |----- CLI Interpreter    -------- choose your php version (PHP 7.4)
+        Step -6 
+        =======   
+        i)
+          File
+             |---Settings
+                   |-----PHP
+                           |----- PHP language level -------- already default value will be there 
+                           |----- CLI Interpreter    -------- choose your php version (PHP 7.4)
                           
-                          
-                          
-  ii) File
-         |---Settings
-                  |-----PHP
-                         |--- Servers
-                                  |---- Click on Add icon (+) 
-                                                   |
-                                                   |----- Name - value(localhost)
-                                                   |
-                                                   |----- Host - value(localhost)  Port - value(80)  Debugger - value(Xdebug (this value will be there from default))
+                                                  
+        ii) File
+             |---Settings
+                     |-----PHP
+                            |--- Servers
+                                    |---- Click on Add icon (+) 
+                                           |  
+                                           |----- Name - value(localhost)
+                                           |
+                                           |----- Host - value(localhost) Port-value(80) Debugger -value(Xdebug (this value will be there from default))
                                          
   
-  iii) File
-         |---Settings
-                  |-----PHP
-                         |--- Debug
+        iii) File
+             |---Settings
+                    |-----PHP
+                            |--- Debug
+                                 |
+                                 |------- Xdebug
+                                              |---- Debug port - value(9003)
+                                                                                       
+       iv) File
+            |---Settings
+                    |-----PHP
+                           |--Debug
                                |
-                               |------- Xdebug
-                                            |---- Debug port - value(9003)
-                                            
-                                            
-  iv) File
-        |---Settings
-                |-----PHP
-                       |--- Debug
-                               |
-                               |------- Pre-configuration 
-                                         |
-                                         |----- 1. (on this line number 1 you will show the "validate" word just click on that ) - one Pop-up Dialog box will Open 
+                               |--Pre-configuration 
+                                     |
+                                     |--1(on this line number 1 you will show the "validate" word just click on that ) - one Pop-up Dialog box will Open 
                                                    |
                                                    |
                                                    Inside Pop-up(Dialog Box)
@@ -1449,120 +1443,113 @@ Step -6
 
 
 
-Step - 7
-========
-
-  i) Open chrome browser
-                 |
-                 type your url(http://marina.local)
-                     |
-                     |---- Select "Debug" Option from (Xdebug helper extension (if not present install this extension for chrome(Xdebug helper))
+           Step - 7
+           ========
+            i) Open chrome browser
+                  |
+                  type your url(http://marina.local)
+                      |
+                      |---- Select "Debug" Option from (Xdebug helper extension (if not present install this extension for chrome(Xdebug helper))
                      
        
-  ii) Select Listening button in PhpStrom(you will find it on right side top of phpstrom)
-                      |
-                      |--- when put your cursor on the icon (icon name should be like this - "Start Listening for PHP Debug Connections")
+            ii) Select Listening button in PhpStrom(you will find it on right side top of phpstrom)
+                        |
+                        |--- when put your cursor on the icon (icon name should be like this - "Start Listening for PHP Debug Connections")
    
-  
-        
-                     
- iii) Open the below file
-           |
-           |---> /var/www/html/marina/pub/index.php
-                                            |
-                                            |----- add break point on line number 12
+                    
+           iii) Open the below file
+                 |
+                 |---> /var/www/html/marina/pub/index.php
+                                             |
+                                             |----- add break point on line number 12
                                                                                           
 
-Un-install Xdebugger Completely From Ubuntu
-===========================================
-sudo apt-get remove php-xdebug
-sudo apt-get remove php7.4-xdebug
-sudo apt-get purge php-xdebug
-sudo apt-get purge php7.4-xdebug
-sudo apt-get autoremove
+       Un-install Xdebugger Completely From Ubuntu
+       ===========================================
+            sudo apt-get remove php-xdebug
+            sudo apt-get remove php7.4-xdebug
+            sudo apt-get purge php-xdebug
+            sudo apt-get purge php7.4-xdebug
+            sudo apt-get autoremove
 
-sudo rm /etc/php/<php-version>/mods-available/xdebug.ini
-sudo rm /etc/php/8.1/mods-available/xdebug.ini
-sudo rm /etc/php/7.4/mods-available/xdebug.ini
-sudo rm /etc/php/8.2/mods-available/xdebug.ini
+            sudo rm /etc/php/<php-version>/mods-available/xdebug.ini
+            sudo rm /etc/php/8.1/mods-available/xdebug.ini
+            sudo rm /etc/php/7.4/mods-available/xdebug.ini
+            sudo rm /etc/php/8.2/mods-available/xdebug.ini
 
-sudo rm /etc/php/7.4/cli/conf.d/*xdebug*
-sudo rm -rf /etc/php/8.2/mods-available/xdebug.ini
+            sudo rm /etc/php/7.4/cli/conf.d/*xdebug*
+            sudo rm -rf /etc/php/8.2/mods-available/xdebug.ini
 
-
-
-
-Install Xdebuger For Php - 8.1 
-==============================
-   |
-   |---------- Same step should be repeat from above but php path will be different
+ 
+        Install Xdebuger For Php - 8.1 
+        ==============================
+              |
+              |---------- Same step should be repeat from above but php path will be different
    
    
    
    
-   
-Qucik Command and Hints
-=======================
-
-  Php Path Location 
-  -----------------
-     |
-     |-cd -/etc/php/7.4
-     |      |
-     |      |---------- apache2  cgi  cli  fpm  mods-available   - these are the common files you find under this directories
-     |
-     |-- cd /usr/lib/php        --- to check the 	(20190902  )
-     |
-     |-- cd etc/php/7.4/fpm/conf.d
-     |
-     |-- cd etc/php/7.4/fpm
+         Qucik Command and Hints
+         =======================
+               Php Path Location 
+               -----------------
+                 |
+                 |-cd -/etc/php/7.4
+                 |      |
+                 |      |---------- apache2  cgi  cli  fpm  mods-available   - these are the common files you find under this directories
+                 |
+                 |-- cd /usr/lib/php        --- to check the 	(20190902  )
+                 |
+                 |-- cd etc/php/7.4/fpm/conf.d
+                 |
+                 |-- cd etc/php/7.4/fpm
             
                     
- Command For Xdebug (https://xdebug.org/docs/install)
- ----------------------------------------------------
-       Basic 
-         |
-         |------- php -m | grep xdebug              ---  check if the xdebugger is present in system
-         |
-         |------ grep -r "xdebug" /etc/php/         --- find the xdebug.ini file
-         |
-         |------ cat /etc/php/7.4/cli/conf.d/20-xdebug.ini    ---- add the zend configuration 
-         |
-         |----- 
+            Command For Xdebug (https://xdebug.org/docs/install)
+            ----------------------------------------------------
+                Basic 
+                   |
+                   |------- php -m | grep xdebug              ---  check if the xdebugger is present in system
+                   |
+                   |------ grep -r "xdebug" /etc/php/         --- find the xdebug.ini file
+                   |
+                   |------ cat /etc/php/7.4/cli/conf.d/20-xdebug.ini    ---- add the zend configuration 
+                   |
+                   |----- 
          
        
-      Un-install
-         |    
-         |------- sudo apt-get remove php-xdebug    ---  
-         |
-         |------ sudo rm /etc/php/7.4/cli/conf.d/*xdebug*      
-         |
-         |------ 
+                Un-install
+                   |    
+                   |------- sudo apt-get remove php-xdebug    ---  
+                   |
+                   |------ sudo rm /etc/php/7.4/cli/conf.d/*xdebug*      
+                   |
+                   |------ 
         
               
-Install Xdebuger For Php - 7.4
-==============================
+               Install Xdebuger For Php - 7.4
+               ==============================
 
-  For Php-7.4 Xdebug version  = 
-  --------------------------
-      - /etc/php/7.4/fpm/conf.d 
-                           |
-                           |-------     
+                For Php-7.4 Xdebug version  = 
+                --------------------------
+                        - /etc/php/7.4/fpm/conf.d 
+                             |
+                             |-------     
                                      zend_extension="/usr/lib/php/20190902/xdebug.so"
                                      xdebug_mode="debug"
                                      xdebug.client_port=9003
                                      xdebug.start_request="yes"
 
 
-     - /etc/php/7.4/fpm
-                    |
-                    |-----
-                           [xdebug]
-                           zend_extension="/usr/lib/php/20190902/xdebug.so"
-                           xdebug.mode=debug
-                           xdebug.client_host=127.0.0.1 
-                           xdebug.client_port=9003
-                           xdebug.start_with_request="yes"
+                        - /etc/php/7.4/fpm
+                               |
+                               |-----
+                                        [xdebug]
+                                        zend_extension="/usr/lib/php/20190902/xdebug.so"
+                                        xdebug.mode=debug
+                                        xdebug.client_host=127.0.0.1 
+                                        xdebug.client_port=9003
+                                        xdebug.start_with_request="yes"
 
 </details>
 
