@@ -1555,7 +1555,15 @@ Git - Issue
 
 
 ![1](https://user-images.githubusercontent.com/78407424/229267413-b90a6b4d-14f7-4150-85ed-1a534f2619d7.png)
-
+![2](https://user-images.githubusercontent.com/78407424/229267525-eea2eb23-dd2f-48b3-9598-16468b29bbb3.png)
+![3](https://user-images.githubusercontent.com/78407424/229267581-5cc3399b-3046-44ab-8c62-8e8891130608.png)
+![4](https://user-images.githubusercontent.com/78407424/229267644-b41719a9-fdf5-446f-8747-27030e72db96.png)
+![5](https://user-images.githubusercontent.com/78407424/229267673-8bebb84f-54d5-4568-9fcd-7c66a3752947.png)
+![6](https://user-images.githubusercontent.com/78407424/229267730-585ce115-7adb-42f3-b5c6-ee3c9988f3ff.png)
+![7](https://user-images.githubusercontent.com/78407424/229267798-03d87aa4-b39c-4e8c-8c54-a877d63836c1.png)
+![Screenshot from 2023-04-01 00-44-32](https://user-images.githubusercontent.com/78407424/229267839-3f61c87d-88eb-4cc4-aae5-2de50834c10d.png)
+![8](https://user-images.githubusercontent.com/78407424/229267947-a7917f1c-7201-4663-ba6a-2eb6aaf148c8.png)
+![Screenshot from 2023-04-01 00-45-25](https://user-images.githubusercontent.com/78407424/229267905-3200c515-be52-4ba6-9ddc-43aa047e0c51.png)
 
 
 ### Sample Date Setup For Magento 
