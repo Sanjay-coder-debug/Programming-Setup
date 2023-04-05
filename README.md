@@ -1118,6 +1118,13 @@ Git - Issue
 	- Open PhpStorm -> Go To Files ->Setting -> Search for Php->Code Style->Php--> Right Side corner->Set From -->Select the Coding Standard.
 	
 </details>	
+![cd1](https://user-images.githubusercontent.com/78407424/230180920-cf405cf4-9ff6-461d-8235-2fb5364f95d7.png)
+![cd2](https://user-images.githubusercontent.com/78407424/230180951-4d79a765-004b-4997-983f-7024852fd1b6.png)
+![cd3](https://user-images.githubusercontent.com/78407424/230180976-dab6e5a1-b8c7-4261-b47b-cf80679367c5.png)
+![cd4](https://user-images.githubusercontent.com/78407424/230181006-a1f12075-f4d7-4998-98fb-390e99f8702f.png)
+![cd5](https://user-images.githubusercontent.com/78407424/230181032-d1946739-5554-4633-90ae-7463287b1d03.png)
+![cd6](https://user-images.githubusercontent.com/78407424/230181056-71717e34-3620-4f72-a5ec-4e4347a5265c.png)
+
 	
 # Magento Tools Setup
 	
