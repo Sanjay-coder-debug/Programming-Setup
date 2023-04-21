@@ -1034,6 +1034,21 @@ Widows Problem
              - C:\Users>cd ..
              - C:\>D:
              - D:\>cd \foldername
+	     
+	     
+    # React setup for windows
+    
+            - nvm -------> helps to use multiple version of react
+            - nvm -v
+	    - nvm list 
+	    - nvm use <node version>    e.g =>nvm use 18.13.0
+	      
+     Install latest version
+              
+	      - 
+		     
+        
+	             
 
 Git - Issue
 -----------
