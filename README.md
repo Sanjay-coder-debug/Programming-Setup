@@ -3,13 +3,16 @@ one place for all tech stack
                              NEVER FEAR FOR NOT TRY !! IF TODAY YOU NOT TRY THEN WHEN YOU TRY -- TRY AND LEARN
 
      
-
-
-## Little Help
---------------------
-- You can  use various version of Php on Ubuntu-18.04 and 20.04
-- You can use various version of Web Server on Ubuntu
--  
+Print LOGS For Testing Purpose
+==============================   
+  <details> 
+     
+               $writer = new \Zend\Log\Writer\Stream(BP . '/var/log/mylogfile.log');
+               $logger = new \Zend\Log\Logger();
+               $logger->addWriter($writer);
+               $logger->info('This Is Simple Text Log'); //To print simple text log
+               $logger->info(print_r($myarray, true)); //To print array log   
+  </details>  
 
 
 
@@ -605,6 +608,34 @@ OpenSource Tools
       By Terminal Way
       ---------------
       -    composer require amasty/promo:2.9.7
+      
+      
+
+Composer.json Vs Composer.lock
+==============================
+
+  - Doing some Changes on Module 
+              |--------------------Creating Pr -- Pr got Merged ---> Create new Tag after PR Merged   - tag-1.0.2
+              
+              
+  - Go to Our Existing Branch Which Already Got Merged 
+                               |------Take pull - and add the Tag Version into - composer.json(main composer.json)
+                                                     |
+                                                     |--------Run Composer Update 
+                                                                       |
+                                                                       |----After running of composer update it will automatically update into composer.lock
+                                                                       
+Composer Install  vs Composer Update      
+====================================
+   Composer Install
+   ----------------
+       - When we run composer install  - it will check the composer file and generate the composer.lock file 
+       
+   Composer Update
+   ----------------
+     composer.json  --  when we run composer update it will take all the updated version version mention in composer.json into composer.lock                                                                    
+ 
+      
       
        
 
