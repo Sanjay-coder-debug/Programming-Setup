@@ -1631,5 +1631,53 @@ Git - Issue
 
 
 
+### How We Can Push Magento Code to Github
+
+   step -1
+   --------
+          - install magento 
+	  - cd /var/www/html
+          - mkdir local
+	  - sudo composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition:2.4.5 
+   
+   step -2
+   -------
+          - setup database and all
+
+   step -3
+   -------
+         - after setup now you can push code to your git repo
+	 -
+         - git init
+	 - git add .
+         - git commit -m "message"
+	 - git remote add origin https://github.com/itzsanjayCodilar/pro-active-shopping-experience.git
+	 - git branch -m master main
+
+     Or 
+         - Search and Fix
+	 - git fetch --all
+         - git remote -v
+	 - git checkout main
+         - git merge master
+	 - git push origin main
+  
+	 
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	
