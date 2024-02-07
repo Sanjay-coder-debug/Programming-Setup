@@ -1692,7 +1692,7 @@ Git - Issue
 
 
      Step -3
-               - How to check React Setup is Working on Not
+               - How to check React Setup is Working on Not (make sure node and npm is already installed in your machine)
 
 			 - If cd Music/repo-name   or Music/repo-name/project-name 
 
