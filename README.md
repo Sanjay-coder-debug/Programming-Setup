@@ -1664,7 +1664,62 @@ Git - Issue
   
 	 
 
-   
+
+
+
+
+### How to Setup React Project Basic and Push to Github
+
+<details><summary><b>Info</b></summary>
+
+     Step -1
+
+               - Create Git Repo 
+	       - Clone the Git Repo (after clone go to repo directory e.g - Music/repo-name )
+
+
+     Step -2
+
+               - Go to clone repo directory  (Terminal ---> cd Music/repo-name) 
+	       
+               - Create the React App Inside repo-name 
+	                    --->  npx create-react-app .   (. means it will setup inside the repo-name itself. setup done inside i.e - Music/repo-name)
+		            --->  npx create-react-app project-name (project-name  project will be setup inside  - project-name directory i.e - Music/repo-name/project-name)
+	       - git branch
+	       - git status
+	       - git add .  (add all file)
+	       - git push origin main (first time setup code need to be push to main or master )
+
+
+     Step -3
+               - How to check React Setup is Working on Not
+
+			 - If cd Music/repo-name   or Music/repo-name/project-name 
+
+				-  npm start
+				Starts the development server.
+				
+				npm run build
+				Bundles the app into static files for production.
+				
+				npm test
+				Starts the test runner.
+				
+				npm run eject
+				Removes this tool and copies build dependencies, configuration files
+				and scripts into the app directory. If you do this, you can’t go back!
+				
+				We suggest that you begin by typing:
+				
+				cd /home/sanjay/Documents/gopabandhu_youth_club
+				npm start
+
+
+
+	
+</details>       
+
+    
 
 
 
