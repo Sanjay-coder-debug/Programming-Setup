@@ -7,13 +7,13 @@ OS Installation
 ---------------
 <details><summary><b>Info</b></summary>
 	
-# Ubuntu
+### Ubuntu
 
        - lsb_release -a
 
-# Windows
+### Windows
 
-# Mac 
+### Mac 
 
 
 </details>
@@ -24,13 +24,13 @@ Language's :
 	
              - All Language Install and Setup
 
-# Java : 
+### Java : 
 
 
-# Php : 
+### Php : 
 
-## Php Command For Ubuntu
----------------------------
+### Php Command For Ubuntu
+
 	<details><summary><b>Info</b></summary>
 	        General
 	        -------
@@ -101,7 +101,7 @@ Language's :
 	       
 	</details>
 
- # Python : 
+ ### Python : 
  
 
  
@@ -416,7 +416,7 @@ IDE's & Editors & Tools
 			
 
 ### Postman
-------------
+-----------
 
 
 ### Eclipse
@@ -465,14 +465,12 @@ Developer tool's
 </details>      
 
 
-## Database Setup
-
- Relational & Non-Relational
- ---------------------------
-
-## Mysql Install & Un-Install
------------------------------
-
+Database Setup
+--------------
+## Relational
+--------------
+### Mysql Install & Un-Install
+------------------------------
 <details><summary><b>Info</b></summary>
 	
         General 
@@ -549,13 +547,12 @@ Developer tool's
       Install Mysql work Bench Ubuntu
       -------------------------------
        - sudo snap install mysql-workbench-community
-
-
-</details>       
+  
 
  ### MariaDB
+ -----------
  
- ##### Beekeeper Studio Db view for Mysql & Maria Db
+ ### Beekeeper Studio Db view for Mysql & Maria Db
 -----------------------------------------------------
    - sudo apt update
    - sudo apt install snapd
@@ -565,11 +562,14 @@ Developer tool's
 
 
 
+## Non-Relationa
+----------------
 
 ### MongoDB
+-----------
 
 
-  
+ </details> 
 
 
 OpenSource Tools
