@@ -104,37 +104,6 @@ Language's :
  
 
 </details>
-
-
-
-
-#Php Setup
-----------
-# Php Setup for Windows
-------------------------
-Basic Php Program Setup Also For Project Setup Based on Core Php 
------------------------------------------------------------------
-                   - Install Xampp   
-                   - Install Vs Code or Atom or Sublime Text
-                   
-
-Laravel Setup For Windows
--------------------------
-  Prerequisite For Laravel Install in Windows Os
-  -----------------------------------------------
-         Method-1 - https://www.youtube.com/watch?v=Czhoqx86V24&ab_channel=EduonixLearningSolutions
-         =========
-            Step-I
-            -------
-                       - Install Xampp  - Apache will not work in new windows - https://stackoverflow.com/questions/27333203/xampp-couldnt-start-apache-windows-10
-                       - Install Composer 
-                       - Install Vs Code or Any Editor You Want
-           Step-II
-           -------
-                      - 
-                      - 
-                      - 
-
 	
 	
 Framework : - : 
@@ -355,6 +324,23 @@ Framework : - :
 	 - Change the Value -  web/cookie/cookie_domain  to / 
 	 - Syntax to update => update core_config_data set value="/" where config_id = 102;
 
+
+### Laravel Setup For Windows
+
+  Prerequisite For Laravel Install in Windows Os
+  
+         Method-1 - https://www.youtube.com/watch?v=Czhoqx86V24&ab_channel=EduonixLearningSolutions
+         =========
+            Step-I
+            -------
+                       - Install Xampp  - Apache will not work in new windows - https://stackoverflow.com/questions/27333203/xampp-couldnt-start-apache-windows-10
+                       - Install Composer 
+                       - Install Vs Code or Any Editor You Want
+           Step-II
+           -------
+                      - 
+                      - 
+                      - 
 
 </details>
        
