@@ -115,7 +115,9 @@ Framework : - :
 <details><summary><b>Info</b></summary>
 
 ### Magento
--------------
+-----------
+<details><summary><b>Info</b></summary>
+	
             Link Official
             -------------
                       - https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/composer.html?lang=en
@@ -327,25 +329,17 @@ Framework : - :
 	 - Change the Value -  web/cookie/cookie_domain  to / 
 	 - Syntax to update => update core_config_data set value="/" where config_id = 102;
 
+</details>
 
-### Laravel Setup For Windows
+### Laravel Setup
 
-  Prerequisite For Laravel Install in Windows Os
-  
-         Method-1 - https://www.youtube.com/watch?v=Czhoqx86V24&ab_channel=EduonixLearningSolutions
-         =========
-            Step-I
-            -------
-                       - Install Xampp  - Apache will not work in new windows - https://stackoverflow.com/questions/27333203/xampp-couldnt-start-apache-windows-10
-                       - Install Composer 
-                       - Install Vs Code or Any Editor You Want
-           Step-II
-           -------
-                      - 
-                      - 
-                      - 
+
+### Django Setup
+
+
 
 </details>
+
        
 IDE's & Editors & Tools
 -----------------------
@@ -353,7 +347,8 @@ IDE's & Editors & Tools
 
 ### Vs Code
 ------------
-	
+ <details><summary><b>Info</b></summary>
+	 
 	   Install vs code
 	   ---------------
 	       - sudo snap install code --classic 
@@ -384,9 +379,11 @@ IDE's & Editors & Tools
 	                                  - Fluent Icons
 	                                  - Bracket Pair Colorizer
 
+</details>
 
 ### PhpStrom
 -------------
+<details><summary><b>Info</b></summary>
 	Install Phpstrom
 	-----------------
 	          - https://snapcraft.io/phpstorm
@@ -414,6 +411,7 @@ IDE's & Editors & Tools
 	    ------------------
 	                       - Help -- > Register
 			
+</details>
 
 ### Postman
 -----------
@@ -571,13 +569,391 @@ Database Setup
  </details> 
 
 
-OpenSource Tools
-==================
 
+
+Version Control System Setup
+----------------------------
+<details><summary><b>Info</b></summary>
+	
+## Github , Gitlab , BitBucket
+------------------------------
+### Github
+----------
+
+### GitLab
+----------
+
+
+### Bit-Bucket
+--------------
+
+
+### How We Can Push Magento Code to Github
+------------------------------------------
+
+<details><summary><b>Info</b></summary>
+
+   step -1
+   --------
+          - install magento 
+	  - cd /var/www/html
+          - mkdir local
+	  - sudo composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition:2.4.5 
+   
+   step -2
+   -------
+          - setup database and all
+
+   step -3
+   -------
+         - after setup now you can push code to your git repo
+	 -
+         - git init
+	 - git add .
+         - git commit -m "message"
+	 - git remote add origin https://github.com/itzsanjayCodilar/pro-active-shopping-experience.git
+	 - git branch -m master main
+
+     Or 
+         - Search and Fix
+	 - git fetch --all
+         - git remote -v
+	 - git checkout main
+         - git merge master
+	 - git push origin main
+  
+	 
+</details>
+
+</details>
+                      
+Windows Setup
+-------------
+<details><summary><b>Info</b></summary>
+
+#### Xampp Isuue
+<details><summary><b>Info</b></summary>
+          Mysql is Not Starting in Xampp
+          ------------------------------
+                - It is not working because  If 3306 port already used (may be another mysql is available)
+                - Open C:\xampp\phpMyAdmin ==> config.inc
+                                                   |--------> $cfg['Servers'][$i]['AllowNoPassword'] = true;  add below line after this line
+                                                   |--------> $cfg['Servers'][$i]['port'] = 3308;
+               - Open  Xampp Panel ---> Near Start/Stop ---> Admin --> Config
+                                                                         |------ Click on This 
+                                                                                     |---- It will show my.ini file 
+											|-----Here change the Port 3306 to 3308
+</details>
+                   
+#### Wordpress Installation Issue
+<details><summary><b>Info</b></summary>
+            - If you changed the port number (like - 3308) then you will get below error 
+                   (Open C:\xampp\phpMyAdmin ==> config.inc here you will get port number)
+	       
+	    - Error establishing a database connection, XAMPP
+                     
+	     Solution - 	 in username field put = localhost:3308    
+  
+</details> 
+
+### Widows Problem
+------------------
+
+<details><summary><b>Info</b></summary>
+   
+    # Get the Serial number of Windows
+          - open CMD as Administrator
+          - type - wmic bios get serialnumber
+          
+    # Format Pendrive
+          - open CMD as Administrator
+          - diskpart
+          - list disk
+          - select <disk-name>
+          - clean
+          - create partition primary
+          - format ft-ntfs
+          - assign
+     
+     # How to Open Bios Setting 
+      
+          - For Lenevo Ideapad Gamming 3
+                              - Function(Fn) + F2
+                              - Function(Fn) + F12
+                              
+    # Change the C Drive to D Drive CMD Way
+             - C:\Users\user>cd..
+             - C:\Users>cd ..
+             - C:\>D:
+             - D:\>cd \foldername
+	     
+	     
+    # React setup for windows
+    
+            - nvm -------> helps to use multiple version of react
+            - nvm -v
+	    - nvm list 
+	    - nvm use <node version>    e.g =>nvm use 18.13.0
+	      
+     Install latest version
+              
+	      - 
+</details> 
+
+### Laravel Setup For Windows
+-----------------------------
+
+<details><summary><b>Info</b></summary>
+
+  Prerequisite For Laravel Install in Windows Os
+  
+         Method-1 - https://www.youtube.com/watch?v=Czhoqx86V24&ab_channel=EduonixLearningSolutions
+         =========
+            Step-I
+            -------
+                       - Install Xampp  - Apache will not work in new windows - https://stackoverflow.com/questions/27333203/xampp-couldnt-start-apache-windows-10
+                       - Install Composer 
+                       - Install Vs Code or Any Editor You Want
+           Step-II
+           -------
+                      - 
+                      - 
+</details>                   - 
+	       
+</details> 
+  
+
+	
+Magento Tool's & Setup
+----------------------
+
+<details><summary><b>Info</b></summary>
+	
+### Magento Codding Standard
+----------------------------
+
+<details><summary><b>Info</b></summary>
+	    
+ 	- https://magefan.com/blog/magento-extension-code-quality
+	       
+	 Way -1
+	 ------
+	 Go to /var/www/html 
+	 -------------------
+	      - git clone https://github.com/magento/magento-coding-standard.git
+	      - cd magento-coding-standard
+	      - composer install
+	 
+	 If Permission issue
+		 sudo chmod -R 777 /var/www/html/magento-coding-standard
+	 
+	  Check the Particular Module
+	  ---------------------------
+	     - vendor/bin/phpcs /path/to/your/extension --standard=Magento2 > log.txt  ---> syntax for Check standard
+	     - vendor/bin/phpcs /var/www/html/marina/app/code/Codilar/CustomRestApi --standard=Magento2 > log.txt   --- log.txt (all errors)
+	
+      	 Direct Command
+         --------------
+    	     - ./vendor/bin/phpcs --standard=./dev/tests/static/framework/Magento/ruleset.xml app/code/CasioSingapore/   
+         
+	 PSR1/PSR2
+         ----------
+	- Open PhpStorm -> Go To Files ->Setting -> Search for Php->Code Style->Php--> Right Side corner->Set From -->Select the Coding Standard.
+	
+
+ ![cd1](https://user-images.githubusercontent.com/78407424/230180920-cf405cf4-9ff6-461d-8235-2fb5364f95d7.png)
+ 
+ ![cd2](https://user-images.githubusercontent.com/78407424/230180951-4d79a765-004b-4997-983f-7024852fd1b6.png)
+
+ ![cd3](https://user-images.githubusercontent.com/78407424/230180976-dab6e5a1-b8c7-4261-b47b-cf80679367c5.png)
+
+ ![cd4](https://user-images.githubusercontent.com/78407424/230181006-a1f12075-f4d7-4998-98fb-390e99f8702f.png)
+
+ ![cd5](https://user-images.githubusercontent.com/78407424/230181032-d1946739-5554-4633-90ae-7463287b1d03.png)
+
+ ![cd6](https://user-images.githubusercontent.com/78407424/230181056-71717e34-3620-4f72-a5ec-4e4347a5265c.png)
+
+</details>
+
+
+### RabbitMQ Setup Command
+--------------------------
+
+<details><summary><b>Info</b></summary>
+	
+           Install of RabbitMQ   - All setup mention in given docs link only .
+           -------------------
+                   - sudo apt install -y rabbitmq-server   - you can go this or you can go with below link
+                   
+                                                                      - https://tecadmin.net/install-rabbitmq-server-on-ubuntu/
+                   
+                   
+                   
+           
+           General Command
+           ---------------
+           - systemctl status rabbitmq-server
+           
+           
+           
+           
+           Configure With Magento Project
+           ------------------------------
+           Step -1
+           -------
+           
+           - Open - Magento Project Directory  -- Check with  env.php  inside this file paste the below code. for run RabbitMq wth Magento
+                     
+                          'queue' => [
+                                     'amqp' => [
+                                               'host' => '127.0.0.1',
+                                               'port' => '5672',
+                                               'user' => 'guest',
+                                               'password' => 'guest',
+                                               'virtualhost' => '/',
+                                               'ssl' => ''
+                                               ] 
+                                      ],
+                                      
+            Step -2
+            -------
+                    - after this run setup & upgrade command in magento directory.
+                    - open your local rabbitMQ and go to Queue check any queue you have or not.
+                    
+           - Check the rabbitMQ is working or not 
+           
+                              - your project url and port number like - http://adobe.training:15672/
+                              - you may got this project used in some other location then kill the port.
+                                       Ex - npx kill-port 8080(put which port error is showing)
+           Un-Install Command
+           ------------------
+
+
+</details>   
+	
+### MailHog
+-----------
+
+<details><summary><b>Info</b></summary>
+	
+     <i> Referecne docs - https://www.rakeshjesadiya.com/install-mailhog-in-ubuntu-php-environment/ </i>
+	
+   	 Step-1
+  	 -------
+          - Common Directory
+          - sudo apt-get update
+          - sudo apt-get install golang-go
+           
+ 	 Step-2
+  	 -------
+          - Install MailHog = go get github.com/mailhog/MailHog
+          - Install mhsendmail = go get github.com/mailhog/mhsendmail
+          
+ 	 Step-3
+         ------
+         - echo "$USER"    - For check the User (Which user name of system)
+         
+         - sudo cp /home/{system_user}/go/bin/MailHog /usr/local/bin/mailhog         - sudo cp /home/sanjay/go/bin/MailHog /usr/local/bin/mailhog 
+         - sudo cp /home/{system_user}/go/bin/mhsendmail /usr/local/bin/mhsendmail   - sudo cp /home/sanjay/go/bin/mhsendmail /usr/local/bin/mhsendmail
+         
+  	Step-4
+  	------
+         - Now Modify the php.ini to setup MailHog path
+              |
+              |---I am working with PHP 7.4 version, So My  php.ini path location would be  /etc/php/7.4/fpm/php.ini
+              
+              |--- sudo nano php.ini
+              
+          - Now update ;sendmail_path = with the given line. Remove the semicolon from the starting and update the path,
+               - sendmail_path = /usr/local/bin/mhsendmail     
+               
+          - If not Work add path to  PHP - CLI  also and Restart the FPM (sudo service php7.4-fpm restart)   
+	
+   	Step-5
+   	------
+          - To Start the Mailhoh is Working or not 
+             
+                   - run   =  mailhog
+           
+           - Open your Browser(chrome)
+                           |------------http://localhost:8025  
+                                                  |
+                                                  Project Wise
+                                                          |----http://blank.m24.test:8025/
+                                                          |----http://fresh.local:8025/
+                                                            
+   	Step-6
+   	-------
+            - Now Click on Enable Jim
+            
+            - Place one Order from magento side and check the mailHog 
+         
+            "Congradulations -- Finally You Setup MailHog"  - If any Error Take Help of Google
+  
+</details>
+
+
+### Elastic Search Command
+---------------------------
+<details><summary><b>Info</b></summary>
+      General
+      --------
+                  - service elasticsearch status
+                  - /etc/init.d/elasticsearch status
+                  - /etc/init.d/elasticsearch start
+                  - /etc/init.d/elasticsearch stop
+                  - /etc/init.d/elasticsearch restart
+                  - /etc/init.d/elasticsearch force-reload - service elasticsearch status
+                  - /etc/init.d/elasticsearch status
+                  - /etc/init.d/elasticsearch start
+                  - /etc/init.d/elasticsearch stop
+                  - /etc/init.d/elasticsearch restart
+                  - /etc/init.d/elasticsearch force-reload
+ 
+     Check The Version
+     -----------------
+                    - curl -XGET 'http://localhost:9200'
+                    - bin/elasticsearch --version
+    
+    
+     Install Command for Elasticsearch
+     ---------------------------------
+     - 
+     
+     
+     
+     
+     UnInstall Command For Elasticsearch
+     -----------------------------------
+     - 
+    
+    
+    Configuration Of Elastic Search in Magento2
+    -------------------------------------------
+                               - 
+                               - 
+                               - 
+                               -
+                               -
+                               
+                    
+    Use Of Elastic Search in Magento2
+    ---------------------------------
+                               - 
+                               - 
+                               - 
+                               - 
+                               - 
+    Links:-
+    ------
+         - https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-elasticsearch-on-ubuntu-20-04
+
+
+</details>         
+                     
 
 ### Composer
 ------------
-
 <details><summary><b>Info</b></summary>
 	
         General
@@ -643,27 +1019,41 @@ Composer.json Vs Composer.lock
    ----------------
      composer.json  --  when we run composer update it will take all the updated version version mention in composer.json into composer.lock                                                                    
 
-      
 </details>       
 
-### Version Control System Setup
+<details>
+    <i> Composer.json Vs Composer.lock </i>
 
-#### Github , Gitlab , BitBucket
---------------------------------
-#### Github
+     - Doing some Changes on Module 
+              |--------------------Creating Pr -- Pr got Merged ---> Create new Tag after PR Merged   - tag-1.0.2
+              
+              
+     - Go to Our Existing Branch Which Already Got Merged 
+                               |------Take pull - and add the Tag Version into - composer.json(main composer.json)
+                                       |
+                                       |--------Run Composer Update 
+                                                 |
+                                                 |----After running of composer update it will automatically update into composer.lock
+</details>
+    
+<details>
+    <i> Composer Install  vs Composer Update </i>
+                                                                      
+       Composer Install
+       ----------------
+          - When we run composer install  - it will check the composer file and generate the composer.lock file 
+       
+       Composer Update
+       ----------------
+          composer.json  --  when we run composer update it will take all the updated version version mention in composer.json into composer.lock 
+    
+</details>   
+</details>   
 
 
-#### GitLab
+### Apache Command
+------------------
 
-
-#### Bit-Bucket
-
-
-
-# Services
-
-## Apache Command
------------------
 <details><summary><b>Info</b></summary>
            General
            ---------- 
@@ -690,8 +1080,9 @@ Composer.json Vs Composer.lock
 
 </details>
 
-## Nginx Command 
+### Nginx Command 
 -----------------
+
 <details><summary><b>Info</b></summary>
       General
       --------
@@ -731,6 +1122,7 @@ Composer.json Vs Composer.lock
 
 ### Redis Installation
 ----------------------
+
 <details><summary><b>Info</b></summary>
 
 </details>
@@ -740,471 +1132,16 @@ Composer.json Vs Composer.lock
 
 ### Varnish Installation
 ------------------------
+
 <details><summary><b>Info</b></summary>
 
 </details>
 
-
-
-
-## Install Magento Using Docker Way
-====================================
-
-<details><summary><b>Info</b></summary>
-	
-  step -1
-          -  Download the sample docker file and extract in the desired location and   Rename the extracted folder to desired project name . 
-           Link - https://drive.google.com/file/d/1WVtY4EUHqb0KQVWTH8kEzjjzkIP6QIh-/view?usp=sharing
-           
-  step -2
-  
-         - Delete the src folder which is inside the docker file and create a new fresh src folder.
-           Ex:
-               - sudo rm -rf src
-               - sudo mkdir src
-               
- step -3
-         - Edit .env file , .application file and docker-compose.dev.yml files
-
-                    - .env file change mysql version to 5.7 . 
-
-                    - .application file you can configure mysql , elasticsearch , rabbitmq and magento setting.
-
-                    - .docker-compose.dev.yml file you have edit 
-            app:
-                     - image: magento24/php7.4:${PROJECT_IMAGE}
-                     
-                     
- step -4
-           Run this docker build command :
-                                           - sudo docker-compose -f docker-compose.dev.yml up -d --build .
-                                            
-                                              -  This command will build your all the container using “docker-compose.dev.yml ” file.
-                                              
- step -5
-               Now for get into the docker app container use this command.
-               
-                           -  " sudo docker-compose exec app bash" .
-                                               
-                            - Before this you must have the docker location and checked with below command for confirmation
-                                            - sudo docker compose ps
-                                            - sudo docker compose start    - make sure all the container are up (running)
-                                            
-step -6
-                - composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition:2.4.3-p1 .
-
-                                        - This command will clone the particular magento project .
-
-                                                         - In this command 2.4.3-p1 is the magento version.you can choose as per your need
-                                                         
-step -7                
-               - Run this command for magento installation :
-               
-               - Before run this command we need to create database as we need to use to install magento things 
-               
-                   - sudo docker compose exec mysql bash   - to go into mysql application  
-               
-bin/magento setup:install --base-url=http://magento24.local/ --db-host=mysql  --db-name=magento --db-user=root --db-password=codilar -- admin-firstname=admin --admin-lastname=demo --admin-email=sachin@codilar.com --admin-user=sachin --admin-password=admin123 --language=en_US --currency=INR --timezone=Asia/Kolkata --use-rewrites=1 --search-engine=elasticsearch7 --elasticsearch-host=elasticsearch --elasticsearch-port=9200
-
-
-- docker cp file.sql container_id:/custom_name.sql    - copy file from docker
-
-</details>
-
-
-### Elastic Search Command
----------------------------
-<details><summary><b>Info</b></summary>
-      General
-      --------
-                  - service elasticsearch status
-                  - /etc/init.d/elasticsearch status
-                  - /etc/init.d/elasticsearch start
-                  - /etc/init.d/elasticsearch stop
-                  - /etc/init.d/elasticsearch restart
-                  - /etc/init.d/elasticsearch force-reload - service elasticsearch status
-                  - /etc/init.d/elasticsearch status
-                  - /etc/init.d/elasticsearch start
-                  - /etc/init.d/elasticsearch stop
-                  - /etc/init.d/elasticsearch restart
-                  - /etc/init.d/elasticsearch force-reload
- 
-     Check The Version
-     -----------------
-                    - curl -XGET 'http://localhost:9200'
-                    - bin/elasticsearch --version
-    
-    
-     Install Command for Elasticsearch
-     ---------------------------------
-     - 
-     
-     
-     
-     
-     UnInstall Command For Elasticsearch
-     -----------------------------------
-     - 
-    
-    
-    Configuration Of Elastic Search in Magento2
-    -------------------------------------------
-                               - 
-                               - 
-                               - 
-                               -
-                               -
-                               
-                    
-    Use Of Elastic Search in Magento2
-    ---------------------------------
-                               - 
-                               - 
-                               - 
-                               - 
-                               - 
-    Links:-
-    ------
-         - https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-elasticsearch-on-ubuntu-20-04
-
-
-</details>         
-                               
-### RabbitMQ Setup Command
-<details><summary><b>Info</b></summary>
-	
-           Install of RabbitMQ   - All setup mention in given docs link only .
-           -------------------
-                   - sudo apt install -y rabbitmq-server   - you can go this or you can go with below link
-                   
-                                                                      - https://tecadmin.net/install-rabbitmq-server-on-ubuntu/
-                   
-                   
-                   
-           
-           General Command
-           ---------------
-           - systemctl status rabbitmq-server
-           
-           
-           
-           
-           Configure With Magento Project
-           ------------------------------
-           Step -1
-           -------
-           
-           - Open - Magento Project Directory  -- Check with  env.php  inside this file paste the below code. for run RabbitMq wth Magento
-                     
-                          'queue' => [
-                                     'amqp' => [
-                                               'host' => '127.0.0.1',
-                                               'port' => '5672',
-                                               'user' => 'guest',
-                                               'password' => 'guest',
-                                               'virtualhost' => '/',
-                                               'ssl' => ''
-                                               ] 
-                                      ],
-                                      
-            Step -2
-            -------
-                    - after this run setup & upgrade command in magento directory.
-                    - open your local rabbitMQ and go to Queue check any queue you have or not.
-                    
-           - Check the rabbitMQ is working or not 
-           
-                              - your project url and port number like - http://adobe.training:15672/
-                              - you may got this project used in some other location then kill the port.
-                                       Ex - npx kill-port 8080(put which port error is showing)
-           Un-Install Command
-           ------------------
-
-
-</details>    
-           
-           
-## Install MailHog For Ubuntu -18.04 & Configure for Magento2
-=============================================================
-<details><summary><b>Info</b></summary>
-
-    step -1
-    ------- 
-                  - Go with below link 
-                           - https://nishchay.io/blog/mailhog-installation-on-ubuntu                
-    step -2
-    -------
-               - create one simple .php file which contain php mail() function and it have message
-               - in your terminal anywhere you can  type - php file.php(this is the file you created as mention in above step)
-               - Now Check in - mailHog Server you must recevice the mail 
-    step -3
-    --------
-               - I am going with  SMTP Extension for Sending mail (you can go with Other)
-               - sudo composer require mageplaza/module-smtp    - install the SMTP
-               - run se:up and ca:fl 
-        
-   -  https://www.emizentech.com/blog/magento-2-4-with-elasticsearch-complete-guide.html  ----> reference
-   -  
-  </details>
-
-## Installation of Magento Over Hyper-v Using Windows OS
-
-   step -1
-   -------
-               -   ![step-1](https://user-images.githubusercontent.com/78407424/187947143-1be51869-df80-4cbe-93e7-9e8560568dac.png)
-               
-               -   Checked the Hyper-V Option 
-               
-               -   After checked the Option, It will as for System Restart -- So Restart the System
-               
-   step -2
-   -------
-   
-   
-Widows Problem
-==============
-<details><summary><b>Info</b></summary>
-   
-    # Get the Serial number of Windows
-          - open CMD as Administrator
-          - type - wmic bios get serialnumber
-          
-    # Format Pendrive
-          - open CMD as Administrator
-          - diskpart
-          - list disk
-          - select <disk-name>
-          - clean
-          - create partition primary
-          - format ft-ntfs
-          - assign
-     
-     # How to Open Bios Setting 
-      
-          - For Lenevo Ideapad Gamming 3
-                              - Function(Fn) + F2
-                              - Function(Fn) + F12
-                              
-    # Change the C Drive to D Drive CMD Way
-             - C:\Users\user>cd..
-             - C:\Users>cd ..
-             - C:\>D:
-             - D:\>cd \foldername
-	     
-	     
-    # React setup for windows
-    
-            - nvm -------> helps to use multiple version of react
-            - nvm -v
-	    - nvm list 
-	    - nvm use <node version>    e.g =>nvm use 18.13.0
-	      
-     Install latest version
-              
-	      - 
-</details> 
-	             
-
-Git - Issue
------------
-![Screenshot (706)](https://user-images.githubusercontent.com/78407424/209929916-1a35d1bf-f79e-41c9-add3-2b8fce252eba.png)
-
-                       
-   
-   
-   
-   
-   
-  
-
-
-
-#Installation of Magento Over WSl Using Windows OS
---------------------------------------------------
-
-
-
-
-
-#Installation of Magento Over Virtual-Box Using Windows OS
-----------------------------------------------------------
-
-## Windows Setup
-
-#### Xampp Isuue
-<details><summary><b>Info</b></summary>
-          Mysql is Not Starting in Xampp
-          ------------------------------
-                - It is not working because  If 3306 port already used (may be another mysql is available)
-                - Open C:\xampp\phpMyAdmin ==> config.inc
-                                                   |--------> $cfg['Servers'][$i]['AllowNoPassword'] = true;  add below line after this line
-                                                   |--------> $cfg['Servers'][$i]['port'] = 3308;
-               - Open  Xampp Panel ---> Near Start/Stop ---> Admin --> Config
-                                                                         |------ Click on This 
-                                                                                     |---- It will show my.ini file 
-											|-----Here change the Port 3306 to 3308
-</details>
-                   
-#### Wordpress Installation Issue
-<details><summary><b>Info</b></summary>
-            - If you changed the port number (like - 3308) then you will get below error 
-                   (Open C:\xampp\phpMyAdmin ==> config.inc here you will get port number)
-	       
-	    - Error establishing a database connection, XAMPP
-                     
-	     Solution - 	 in username field put = localhost:3308    
-  
-</details> 
-  
-  
-## Magento Codding Standard
-
-<details><summary><b>Info</b></summary>
-	    
- 	- https://magefan.com/blog/magento-extension-code-quality
-	       
-	 Way -1
-	 ------
-	 Go to /var/www/html 
-	 -------------------
-	      - git clone https://github.com/magento/magento-coding-standard.git
-	      - cd magento-coding-standard
-	      - composer install
-	 
-	 If Permission issue
-		 sudo chmod -R 777 /var/www/html/magento-coding-standard
-	 
-	  Check the Particular Module
-	  ---------------------------
-	     - vendor/bin/phpcs /path/to/your/extension --standard=Magento2 > log.txt  ---> syntax for Check standard
-	     - vendor/bin/phpcs /var/www/html/marina/app/code/Codilar/CustomRestApi --standard=Magento2 > log.txt   --- log.txt (all errors)
-	
-      	 Direct Command
-         --------------
-    	     - ./vendor/bin/phpcs --standard=./dev/tests/static/framework/Magento/ruleset.xml app/code/CasioSingapore/   
-         
-	 PSR1/PSR2
-         ----------
-	- Open PhpStorm -> Go To Files ->Setting -> Search for Php->Code Style->Php--> Right Side corner->Set From -->Select the Coding Standard.
-	
-</details>	
-
- ![cd1](https://user-images.githubusercontent.com/78407424/230180920-cf405cf4-9ff6-461d-8235-2fb5364f95d7.png)
- 
- ![cd2](https://user-images.githubusercontent.com/78407424/230180951-4d79a765-004b-4997-983f-7024852fd1b6.png)
-
- ![cd3](https://user-images.githubusercontent.com/78407424/230180976-dab6e5a1-b8c7-4261-b47b-cf80679367c5.png)
-
- ![cd4](https://user-images.githubusercontent.com/78407424/230181006-a1f12075-f4d7-4998-98fb-390e99f8702f.png)
-
- ![cd5](https://user-images.githubusercontent.com/78407424/230181032-d1946739-5554-4633-90ae-7463287b1d03.png)
-
- ![cd6](https://user-images.githubusercontent.com/78407424/230181056-71717e34-3620-4f72-a5ec-4e4347a5265c.png)
-
-	
-# Magento Tools Setup
-	
-### MailHog
- <details>
-	
-     <i> Referecne docs - https://www.rakeshjesadiya.com/install-mailhog-in-ubuntu-php-environment/ </i>
-	
-   	 Step-1
-  	 -------
-          - Common Directory
-          - sudo apt-get update
-          - sudo apt-get install golang-go
-           
- 	 Step-2
-  	 -------
-          - Install MailHog = go get github.com/mailhog/MailHog
-          - Install mhsendmail = go get github.com/mailhog/mhsendmail
-          
- 	 Step-3
-         ------
-         - echo "$USER"    - For check the User (Which user name of system)
-         
-         - sudo cp /home/{system_user}/go/bin/MailHog /usr/local/bin/mailhog         - sudo cp /home/sanjay/go/bin/MailHog /usr/local/bin/mailhog 
-         - sudo cp /home/{system_user}/go/bin/mhsendmail /usr/local/bin/mhsendmail   - sudo cp /home/sanjay/go/bin/mhsendmail /usr/local/bin/mhsendmail
-         
-  	Step-4
-  	------
-         - Now Modify the php.ini to setup MailHog path
-              |
-              |---I am working with PHP 7.4 version, So My  php.ini path location would be  /etc/php/7.4/fpm/php.ini
-              
-              |--- sudo nano php.ini
-              
-          - Now update ;sendmail_path = with the given line. Remove the semicolon from the starting and update the path,
-               - sendmail_path = /usr/local/bin/mhsendmail     
-               
-          - If not Work add path to  PHP - CLI  also and Restart the FPM (sudo service php7.4-fpm restart)   
-	
-   	Step-5
-   	------
-          - To Start the Mailhoh is Working or not 
-             
-                   - run   =  mailhog
-           
-           - Open your Browser(chrome)
-                           |------------http://localhost:8025  
-                                                  |
-                                                  Project Wise
-                                                          |----http://blank.m24.test:8025/
-                                                          |----http://fresh.local:8025/
-                                                            
-   	Step-6
-   	-------
-            - Now Click on Enable Jim
-            
-            - Place one Order from magento side and check the mailHog 
-         
-            "Congradulations -- Finally You Setup MailHog"  - If any Error Take Help of Google
-  
-</details>
-	
-### Composer
-<details>
-    <i> Composer.json Vs Composer.lock </i>
-
-     - Doing some Changes on Module 
-              |--------------------Creating Pr -- Pr got Merged ---> Create new Tag after PR Merged   - tag-1.0.2
-              
-              
-     - Go to Our Existing Branch Which Already Got Merged 
-                               |------Take pull - and add the Tag Version into - composer.json(main composer.json)
-                                       |
-                                       |--------Run Composer Update 
-                                                 |
-                                                 |----After running of composer update it will automatically update into composer.lock
-</details>
-    
-<details>
-    <i> Composer Install  vs Composer Update </i>
-                                                                      
-       Composer Install
-       ----------------
-          - When we run composer install  - it will check the composer file and generate the composer.lock file 
-       
-       Composer Update
-       ----------------
-          composer.json  --  when we run composer update it will take all the updated version version mention in composer.json into composer.lock 
-    
-</details>   
-
-
-### ElasticSearch
-
-
-### Redis
-
-
-
-### Varnish	
 
 
 
 ### STMP Setup for Magento 
+--------------------------
 
 <details>
 					
@@ -1263,6 +1200,7 @@ Git - Issue
 			
                
 ### Setup - Xdebug in Magento Proect
+------------------------------------
 <details>
         Xdebug Setup in Local
         ----------------------
@@ -1534,7 +1472,7 @@ Git - Issue
                                         xdebug.client_port=9003
                                         xdebug.start_with_request="yes"
 
-</details>
+
 
 
 ![1](https://user-images.githubusercontent.com/78407424/229267413-b90a6b4d-14f7-4150-85ed-1a534f2619d7.png)
@@ -1548,46 +1486,15 @@ Git - Issue
 ![8](https://user-images.githubusercontent.com/78407424/229267947-a7917f1c-7201-4663-ba6a-2eb6aaf148c8.png)
 ![Screenshot from 2023-04-01 00-45-25](https://user-images.githubusercontent.com/78407424/229267905-3200c515-be52-4ba6-9ddc-43aa047e0c51.png)
 
-
-### How We Can Push Magento Code to Github
-<details><summary><b>Info</b></summary>
-
-   step -1
-   --------
-          - install magento 
-	  - cd /var/www/html
-          - mkdir local
-	  - sudo composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition:2.4.5 
-   
-   step -2
-   -------
-          - setup database and all
-
-   step -3
-   -------
-         - after setup now you can push code to your git repo
-	 -
-         - git init
-	 - git add .
-         - git commit -m "message"
-	 - git remote add origin https://github.com/itzsanjayCodilar/pro-active-shopping-experience.git
-	 - git branch -m master main
-
-     Or 
-         - Search and Fix
-	 - git fetch --all
-         - git remote -v
-	 - git checkout main
-         - git merge master
-	 - git push origin main
-  
-	 
+</details>
 </details>
 
-
-
-
+FrontEnd Setup
+--------------
+<details><summary><b>Info</b></summary>
+	
 ### How to Setup React Project Basic and Push to Github
+-------------------------------------------------------
 
 <details><summary><b>Info</b></summary>
 
@@ -1637,7 +1544,7 @@ Git - Issue
 
 	
 </details>       
-
+</details>      
 
 
 ### How to AEM On Ubuntu & IDEs
@@ -1668,9 +1575,13 @@ Git - Issue
 ---------------
 
 ### Docker
+----------
+
 
 
 ### Jenkins
+-----------
+
 
 
 ### 
