@@ -3,73 +3,107 @@ one place for all tech stack
                              NEVER FEAR FOR NOT TRY !! IF TODAY YOU NOT TRY THEN WHEN YOU TRY -- TRY AND LEARN
 
      
-Print LOGS For Testing Purpose
-==============================   
-  <details> 
-     
-               $writer = new \Zend\Log\Writer\Stream(BP . '/var/log/mylogfile.log');
-               $logger = new \Zend\Log\Logger();
-               $logger->addWriter($writer);
-               $logger->info('This Is Simple Text Log'); //To print simple text log
-               $logger->info(print_r($myarray, true)); //To print array log   
-  </details>  
+OS Installation
+---------------
 
+# Ubuntu
 
+       - lsb_release -a
 
-OS Installation 
-------------------
-  
+# Windows
 
-
-### Kali Linux Command
--------------------------
-
-
-
-### Ubuntu Command
-------------------
-                Basic 
-                       - ls
-                       - ll
-                       - clear
-                       - exit
-                       - ll -la
-                       - mkdir
-                       - rm -rf 
-                       - chmod -R 777 
-                       - sudo su
-                       - mv
-                       - cp
-                       - nano
-                       - cat 
+# Mac 
                        
-        
-      Check Ubuntu version
-      --------------------
-            - lsb_release -a
-            
-
-
-### Windos
-------------
-
-
-
-
-
-Language :
---------------
+         
+Language's :
+----------
+<details><summary><b>Info</b></summary>
+	
              - All Language Install and Setup
 
-# Java Setup
---------------------
-#Java Setup For Windows
------------------------
- Basic Java Program Setup
- -------------------------
- - 
+# Java : 
 
 
+# Php : 
+
+## Php Command For Ubuntu
+---------------------------
+	<details><summary><b>Info</b></summary>
+	        General
+	        -------
+	           - php --version                              - Check Which Version php You have in your system
+	           - sudo update-alternatives --config php      - List All The Php Version & use as per your need 
+	           - sudo systemctl restart php7.3-fpm  | start php7.3-fpm  | stop php7.3-fpm 
+	           - sudo a2dismod php7.2
+	           - sudo a2enmod php7.4
+	           - sudo service php7.3-fpm status
+	           - sudo service php7.3-fpm stop
+	           - sudo service php7.3-fpm start
+	           - sudo service php7.4-fpm status
+	           - sudo service php7.4-fpm stop
+	           
+	           
+	           Php 8.1 = https://medium.com/@laraveltuts/how-to-install-and-run-php-8-x-on-ubuntu-20-04-8f18e7565c41
+	           
+	           Link - https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/php-settings.html
+	           
+	           Devdocs - https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/overview.html
+	
+	           
+	        Install
+	        --------
+	         Add PHP PPA
+	         ------------
+	           - sudo apt install software-properties-common
+	           - sudo add-apt-repository ppa:ondrej/php
+	           - sudo apt-get update
+	           
+	           - sudo apt install php8.1 || sudo apt install php7.4 || sudo apt install php7.3  || sudo apt install php - choose your version
+	           - sudo apt-get install php7.4-common php7.4-xml php7.4-curl php7.4-bcmath php7.4-intl php7.4-gd php7.4-zip php7.4-mysql php7.4-soap php7.4-mbstring
+	           - sudo apt install php7.4-common php7.4-mysql php7.4 php7.4-cgi libapache2-mod-php7.4 php-pear php7.4-mbstring
+	           - ext-bcmath,ext-ctype,ext-curl,ext-dom,ext-gd,ext-hash,ext-iconv,ext-int,ext-mbstring,ext-openssl,ext-pdo_mysql,ext-simplexml,ext-soap,ext-xsl, ext-zip,              ext- sockets
+	           
+	           
+	           Install Php8.1
+	           ==============
+	                      - sudo apt install --no-install-recommends php8.1
+	                                - The --no-install-recommends flag will ensure that other packages like the Apache web server are not installed.
+	                      
+	           Related Package Php8.1
+	           ----------------------
+	             - sudo apt install php8.1-extension_name
+	             - sudo apt-get install -y php8.1-cli php8.1-common php8.1-mysql php8.1-zip php8.1-gd php8.1-mbstring php8.1-curl php8.1-xml php8.1-bcmath
+	         
+	         
+	        Configure Php8.X File 
+	        ---------------------
+	                - sudo nano /etc/php/8.1/apache2/php.ini    - open this file 
+	                 
+	                 - upload_max_filesize = 32M 
+	                 - post_max_size = 48M 
+	                 - memory_limit = 256M 
+	                 - max_execution_time = 600  
+	                 - max_input_vars = 3000 
+	                 - max_input_time = 1000
+	                
+	         
+	        Un-install
+	        -----------
+	             - sudo apt-get purge php7.*
+	             - sudo apt-get autoclean
+	             - sudo apt-get autoremove
+	             - sudo apt autoremove
+	             - sudo apt-get --purge remove apache2
+	       
+	       
+	</details>
+
+ # Python : 
+ 
+
+ 
+
+</details>
 
 
 
@@ -100,98 +134,13 @@ Laravel Setup For Windows
                       - 
                       - 
                       - 
-                   
 
-
-
-# Php Setup For Ubuntu
-----------------------
-
-
-
-
-### Php Command For Ubuntu
----------------------------
-        General
-        -------
-           - php --version                              - Check Which Version php You have in your system
-           - sudo update-alternatives --config php      - List All The Php Version & use as per your need 
-           - sudo systemctl restart php7.3-fpm  | start php7.3-fpm  | stop php7.3-fpm 
-           - sudo a2dismod php7.2
-           - sudo a2enmod php7.4
-           - sudo service php7.3-fpm status
-           - sudo service php7.3-fpm stop
-           - sudo service php7.3-fpm start
-           - sudo service php7.4-fpm status
-           - sudo service php7.4-fpm stop
-           
-           
-           Php 8.1 = https://medium.com/@laraveltuts/how-to-install-and-run-php-8-x-on-ubuntu-20-04-8f18e7565c41
-           
-           Link - https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/php-settings.html
-           
-           Devdocs - https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/overview.html
-
-           
-        Install
-        --------
-         Add PHP PPA
-         ------------
-           - sudo apt install software-properties-common
-           - sudo add-apt-repository ppa:ondrej/php
-           - sudo apt-get update
-           
-           - sudo apt install php8.1 || sudo apt install php7.4 || sudo apt install php7.3  || sudo apt install php - choose your version
-           - sudo apt-get install php7.4-common php7.4-xml php7.4-curl php7.4-bcmath php7.4-intl php7.4-gd php7.4-zip php7.4-mysql php7.4-soap php7.4-mbstring
-           - sudo apt install php7.4-common php7.4-mysql php7.4 php7.4-cgi libapache2-mod-php7.4 php-pear php7.4-mbstring
-           - ext-bcmath,ext-ctype,ext-curl,ext-dom,ext-gd,ext-hash,ext-iconv,ext-int,ext-mbstring,ext-openssl,ext-pdo_mysql,ext-simplexml,ext-soap,ext-xsl, ext-zip,              ext- sockets
-           
-           
-           Install Php8.1
-           ==============
-                      - sudo apt install --no-install-recommends php8.1
-                                - The --no-install-recommends flag will ensure that other packages like the Apache web server are not installed.
-                      
-           Related Package Php8.1
-           ----------------------
-             - sudo apt install php8.1-extension_name
-             - sudo apt-get install -y php8.1-cli php8.1-common php8.1-mysql php8.1-zip php8.1-gd php8.1-mbstring php8.1-curl php8.1-xml php8.1-bcmath
-         
-         
-        Configure Php8.X File 
-        ---------------------
-                - sudo nano /etc/php/8.1/apache2/php.ini    - open this file 
-                 
-                 - upload_max_filesize = 32M 
-                 - post_max_size = 48M 
-                 - memory_limit = 256M 
-                 - max_execution_time = 600  
-                 - max_input_vars = 3000 
-                 - max_input_time = 1000
-                
-         
-        Un-install
-        -----------
-             - sudo apt-get purge php7.*
-             - sudo apt-get autoclean
-             - sudo apt-get autoremove
-             - sudo apt autoremove
-             - sudo apt-get --purge remove apache2
-       
-       
-           
-
-### Python Command
--------------------
-
-
-
-
-
-
-
+	
+	
 Framework : - : 
-=================
+==============
+
+<details><summary><b>Info</b></summary>
 
 ### Magento
 -------------
@@ -388,67 +337,97 @@ Framework : - :
 
               
               
-              
-Setup Database in Magento (If you have  Already Existing Project Setup and Also You Have Existing Database but You Forget Your Uname and PassWd )   
-------------------------------------------------------------------------------------------------------------------------------------------------
+	              
+	Setup Database in Magento (If you have  Already Existing Project Setup and Also You Have Existing Database but You Forget Your Uname and PassWd )   
+	------------------------------------------------------------------------------------------------------------------------------------------------
+	
+	Step-1
+	-------
+	  - bin/magento setup:install  --base-url=http://shopmonk.local/  --db-host=localhost  --db-name=rehandel  --db-user=magento  --db-password=Magento@123 --backend-frontname=admin  --admin-firstname=admin  --admin-lastname=admin  --admin-email=sanjay.d@codilar.com  --admin-user=admin1  --admin-password=admin123  --language=en_US  --currency=INR  --timezone=Asia/Kolkata  --use-rewrites=1
+	
+	Step -2 
+	--------
+	 - sudo php bin/magento admin:user:create --admin-user='admin1' --admin-password='admin123' --admin-email='sanjay.d@codilar.com' --admin-firstname='Sanjay' --admin-lastname='Kumar'
+	
+	Step -3
+	-------
+	 - SELECT *FROM `core_config_data`WHERE (`scope` LIKE '%cookie%' OR `path` LIKE '%cookie%' OR `value` LIKE '%cookie%') LIMIT 50
+	 - Change the Value -  web/cookie/cookie_domain  to / 
+	 - Syntax to update => update core_config_data set value="/" where config_id = 102;
 
-Step-1
--------
-  - bin/magento setup:install  --base-url=http://shopmonk.local/  --db-host=localhost  --db-name=rehandel  --db-user=magento  --db-password=Magento@123 --backend-frontname=admin  --admin-firstname=admin  --admin-lastname=admin  --admin-email=sanjay.d@codilar.com  --admin-user=admin1  --admin-password=admin123  --language=en_US  --currency=INR  --timezone=Asia/Kolkata  --use-rewrites=1
 
-Step -2 
---------
- - sudo php bin/magento admin:user:create --admin-user='admin1' --admin-password='admin123' --admin-email='sanjay.d@codilar.com' --admin-firstname='Sanjay' --admin-lastname='Kumar'
-
-Step -3
--------
- - SELECT *FROM `core_config_data`WHERE (`scope` LIKE '%cookie%' OR `path` LIKE '%cookie%' OR `value` LIKE '%cookie%') LIMIT 50
- - Change the Value -  web/cookie/cookie_domain  to / 
- - Syntax to update => update core_config_data set value="/" where config_id = 102;
-
-
-
- Un-install
-------------          
+</details>
        
-Setup Multiple Website for Magento Like - Japan and Singapore
-=============================================================
+IDE's & Editors & Tools
+-----------------------
+<details><summary><b>Info</b></summary>
 
-Link - https://www.youtube.com/watch?v=1HrOfr8e96A
+### Vs Code
+------------
+	
+	   Install vs code
+	   ---------------
+	       - sudo snap install code --classic 
+	       
+	       
+	   Un-install vs code
+	   ------------------
+	         - 
+	         
+	   
+	
+	  Vs code setting
+	  ---------------
+		
+	             For Tree View OF Files 
+	             ----------------------
+	                                 - Setting>Search Compact Folder > Un-Checked the Check Box
+	                                 - Setting > Search Tree Indent 
+	                                                      
+	                
+	            Codding Help Extensions
+	            -----------------------
+	                                  - Auto Rename Tag
+	                                  - Live Server 
+	                                  - Prettier - Code Formatter
+	                                  - vscode-icons
+	                                  - codeStackr Theme
+	                                  - Fluent Icons
+	                                  - Bracket Pair Colorizer
 
-<details>
-  
-  pub/index.php
-  
-  
-       switch($_SERVER['HTTP_HOST']) {
-            case 'casio-gshock-ecom.loc':
-                  $runCode = 'jp';
-                  $websiteType = 'website';
-                  break;
-           case 'casio-gshock-ecom.loc.sg':
-                  $runCode = 'sg';
-                  $websiteType = 'website';
-                  break;
-          }
-   $params[\Magento\Store\Model\StoreManager::PARAM_RUN_CODE] = $runCode;
-   $params[\Magento\Store\Model\StoreManager::PARAM_RUN_TYPE] = $websiteType;
 
-</details>  
-
-       
-IDE,EDITORS & Other
-===================
-### Anydesk
------------
-- wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | apt-key add -
-- echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk.list
-- sudo apt update
-- sudo apt install anydesk
-- anydesk
+### PhpStrom
+-------------
+	Install Phpstrom
+	-----------------
+	          - https://snapcraft.io/phpstorm
+	          - https://github.com/RisesunStudios/ide-eval-resetter            --  Phpstorm reset eval
+	          - sudo snap install phpstorm --classic
+	          - sudo snap install phpstorm --channel=2020.3/stable --classic   --  Specific version 
+	  
+	          - sudo snap remove phpstorm
+	          
+	          
+	         
+	Usefull Extension for PhpStorm
+	------------------------------
+	
+	
+	          
+	          
+	Completly Uninstall PhpStrom
+	----------------------------
+	        - sudo snap list
+	        - sudo snap remove phpstorm
+	        - whereis phpstrom
+	
+	    Activation of Php
+	    ------------------
+	                       - Help -- > Register
+			
 
 ### Postman
---------------
+------------
 
 
 ### Eclipse
@@ -468,261 +447,45 @@ IDE,EDITORS & Other
                  -
                  - 
                  - 
-              
-
-
-### Atom
---------------------
-
-
-
-### Vs Code
--------------------------
-  Best Extension for Vs Code
-  ---------------------------
-       - 
-
-   Install Vs Code
-   -------------------
-       - sudo snap install code --classic 
-       
-       
-   Un-Install Vs Code
-   -------------------
-         - 
-         
-   
-   Git Configuration For Vs Code 
-   -----------------------------
-   
-   - 
-   
-
-  Vs Code Setting
-  -----------------
-             For Tree View OF Files 
-             ----------------------
-                                 - Setting>Search Compact Folder > Un-Checked the Check Box
-                                 - Setting > Search Tree Indent 
-                                                      
-                
-            Codding Help Extensions
-            -----------------------
-                                  - Auto Rename Tag
-                                  - Live Server 
-                                  - Prettier - Code Formatter
-                                  - vscode-icons
-                                  - codeStackr Theme
-                                  - Fluent Icons
-                                  - Bracket Pair Colorizer
                                   
 
+</details>
                          
 
+
+Developer tool's
+---------------
+
+<details><summary><b>Info</b></summary>
 
 ### Install Slack 
 -----------------
              - sudo snap install slack
 
 
-### PhpStrom
--------------------------
-Install Phpstrom
------------------
-          - https://snapcraft.io/phpstorm
-          - https://github.com/RisesunStudios/ide-eval-resetter            --  Phpstorm reset eval
-          - sudo snap install phpstorm --classic
-          - sudo snap install phpstorm --channel=2020.3/stable --classic   --  Specific version 
-  
-          - sudo snap remove phpstorm
-          
-          
-         
-Usefull Extension for PhpStorm
-------------------------------
-
-
-          
-          
-Completly Uninstall PhpStrom
-----------------------------
-        - sudo snap list
-        - sudo snap remove phpstorm
-        - whereis phpstrom
-
-    Activation of Php
-    ------------------
-                       - Help -- > Register
-                       
- 
-### Beekeeper Studio
---------------------
-   - sudo apt update
-   - sudo apt install snapd
-   - sudo snap install beekeeper-studio
-  
-  
-
-
-OpenSource Tools
-==================
-
-
-### Composer
-------------
-        General
-        ---------
-            - composer -v
-            - cd
-            - pwd
-            - check the php must be install
-            - Some time - By default it will install composer version -1 so you need to un-install the version-1 and again need to install 
-        Install
-        ---------
-            - sudo apt install composer          - when you run this one it will install composer version -1 
-            - https://getcomposer.org/download/  - official site for install (when you run this one it will install composer version -2)
-            
-           ( or)
-            - sudo apt install unzip
-            - curl -sS https://getcomposer.org/installer -o composer-setup.php
-            - sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
-       Un-install
-       ----------
-            - sudo apt-get remove composer
-            - sudo apt-get autoremove composer
-            - sudo apt-get purge composer
-            - sudo apt-get autoremove --purge composer
-            
-       
-     
-      Composer Self-Update to Other Version
-      -------------------------------------
-            - sudo composer self-update --1
-            - sudo composer self-update --2
-            
-            
-      Install Any Third Party Module using Composer
-      ---------------------------------------------
-      -    Here we need to Install this third party module   E.g -  amasty/promo "version": "2.9.7",
-      
-      By Terminal Way
-      ---------------
-      -    composer require amasty/promo:2.9.7
-      
-      
-
-Composer.json Vs Composer.lock
-==============================
-
-  - Doing some Changes on Module 
-              |--------------------Creating Pr -- Pr got Merged ---> Create new Tag after PR Merged   - tag-1.0.2
-              
-              
-  - Go to Our Existing Branch Which Already Got Merged 
-                               |------Take pull - and add the Tag Version into - composer.json(main composer.json)
-                                                     |
-                                                     |--------Run Composer Update 
-                                                                       |
-                                                                       |----After running of composer update it will automatically update into composer.lock
-                                                                       
-Composer Install  vs Composer Update      
-====================================
-   Composer Install
-   ----------------
-       - When we run composer install  - it will check the composer file and generate the composer.lock file 
-       
-   Composer Update
-   ----------------
-     composer.json  --  when we run composer update it will take all the updated version version mention in composer.json into composer.lock                                                                    
- 
-      
-      
-       
-
-### Github , Gitlab , BitBucket
--------------------------------------------
+### Anydesk
+-----------
+- wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | apt-key add -
+- echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk.list
+- sudo apt update
+- sudo apt install anydesk
+- anydesk
 
 
 
+</details>      
 
 
-Android Studio
--------------------------------
+## Database Setup
 
+ Relational & Non-Relational
+ ---------------------------
 
+## Mysql Install & Un-Install
+-----------------------------
 
-Chrome 
-------------------------
-
-
-
-## Apache Command
------------------
-           General
-           ---------- 
-                        - whereis apache2                       - check the if furthur exist after uninstall
-                        - apache2 -v  || apache2 --version         
-                        - sudo service apache2 start
-                        - sudo service apache2 status
-                        - sudo service apache2 stop
-                        - systemctl status apache2.service
-                        - sudo systemctl enable apache2.service
-                        - sudo nano /etc/apache2/sites-available/magento2.conf
-                        - sudo a2enmod rewrite
-                        
-           Install
-           --------
-                     - sudo apt install apache2
- 
-         Un-install
-         -----------
-                      - sudo apt-get purge apache2 apache2-utils apache2.2-bin apache2-common
-                      - sudo apt-get autoremove
-                      - sudo rm -rf /etc/apache2
-                      - sudo apt autoremove apache2
-                      
-                     
-
-
-## Nginx Command 
------------------
-      General
-      --------
-           - nginx --version
-           - sudo service nginx status | stop | start | restart
-           - sudo systemctl stop nginx.service
-           - sudo systemctl start nginx.service
-           - sudo systemctl enable nginx.service
-           - sudo nano /etc/nginx/sites-available/default 
-        
-        (Or)
-            - /etc/init.d/nginx status
-            - /etc/init.d/nginx stop
-            - /etc/init.d/nginx start
-           
-      Install
-      ---------
-           - sudo apt install nginx
-           - 
-           - 
-           - 
-           - 
-      
-      Un-install
-      -----------
-           - sudo apt-get remove nginx nginx-common
-           - sudo apt-get purge nginx nginx-common
-           - sudo apt-get autoremove
-      Nginx Issue
-      ------------
-           - sudo nginx -t
-           - tail -f /var/log/nginx/error.log
-           - ps auxf | grep nginx
-           
-      
-
-## Mysql Command 
------------------
+<details><summary><b>Info</b></summary>
+	
         General 
         --------       
              - mysql --version
@@ -799,41 +562,208 @@ Chrome
        - sudo snap install mysql-workbench-community
 
 
+</details>       
+
+ ### MariaDB
+ 
+ ##### Beekeeper Studio Db view for Mysql & Maria Db
+-----------------------------------------------------
+   - sudo apt update
+   - sudo apt install snapd
+   - sudo snap install beekeeper-studio
+  
+
+
+
+
+
+### MongoDB
+
+
+  
+
+
+OpenSource Tools
+==================
+
+
+### Composer
+------------
+
+<details><summary><b>Info</b></summary>
+	
+        General
+        ---------
+            - composer -v
+            - cd
+            - pwd
+            - check the php must be install
+            - Some time - By default it will install composer version -1 so you need to un-install the version-1 and again need to install 
+        Install
+        ---------
+            - sudo apt install composer          - when you run this one it will install composer version -1 
+            - https://getcomposer.org/download/  - official site for install (when you run this one it will install composer version -2)
+            
+           ( or)
+            - sudo apt install unzip
+            - curl -sS https://getcomposer.org/installer -o composer-setup.php
+            - sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+       Un-install
+       ----------
+            - sudo apt-get remove composer
+            - sudo apt-get autoremove composer
+            - sudo apt-get purge composer
+            - sudo apt-get autoremove --purge composer
+            
+       
+     
+      Composer Self-Update to Other Version
+      -------------------------------------
+            - sudo composer self-update --1
+            - sudo composer self-update --2
+            
+            
+      Install Any Third Party Module using Composer
+      ---------------------------------------------
+      -    Here we need to Install this third party module   E.g -  amasty/promo "version": "2.9.7",
+      
+      By Terminal Way
+      ---------------
+      -    composer require amasty/promo:2.9.7
+      
+      
+
+Composer.json Vs Composer.lock
+-------------------------------
+  - Doing some Changes on Module 
+              |--------------------Creating Pr -- Pr got Merged ---> Create new Tag after PR Merged   - tag-1.0.2
+              
+              
+  - Go to Our Existing Branch Which Already Got Merged 
+                               |------Take pull - and add the Tag Version into - composer.json(main composer.json)
+                                                     |
+                                                     |--------Run Composer Update 
+                                                                       |
+
+
+                                                                   |----After running of composer update it will automatically update into composer.lock
+   Composer Install
+   ----------------
+       - When we run composer install  - it will check the composer file and generate the composer.lock file 
+       
+   Composer Update
+   ----------------
+     composer.json  --  when we run composer update it will take all the updated version version mention in composer.json into composer.lock                                                                    
+
+      
+</details>       
+
+### Version Control System Setup
+
+#### Github , Gitlab , BitBucket
+--------------------------------
+#### Github
+
+
+#### GitLab
+
+
+#### Bit-Bucket
+
+
+
+# Services
+
+## Apache Command
+-----------------
+<details><summary><b>Info</b></summary>
+           General
+           ---------- 
+                        - whereis apache2                       - check the if furthur exist after uninstall
+                        - apache2 -v  || apache2 --version         
+                        - sudo service apache2 start
+                        - sudo service apache2 status
+                        - sudo service apache2 stop
+                        - systemctl status apache2.service
+                        - sudo systemctl enable apache2.service
+                        - sudo nano /etc/apache2/sites-available/magento2.conf
+                        - sudo a2enmod rewrite
+                        
+           Install
+           --------
+                     - sudo apt install apache2
+ 
+         Un-install
+         -----------
+                      - sudo apt-get purge apache2 apache2-utils apache2.2-bin apache2-common
+                      - sudo apt-get autoremove
+                      - sudo rm -rf /etc/apache2
+                      - sudo apt autoremove apache2             
+
+</details>
+
+## Nginx Command 
+-----------------
+<details><summary><b>Info</b></summary>
+      General
+      --------
+           - nginx --version
+           - sudo service nginx status | stop | start | restart
+           - sudo systemctl stop nginx.service
+           - sudo systemctl start nginx.service
+           - sudo systemctl enable nginx.service
+           - sudo nano /etc/nginx/sites-available/default 
+        
+        (Or)
+            - /etc/init.d/nginx status
+            - /etc/init.d/nginx stop
+            - /etc/init.d/nginx start
+           
+      Install
+      ---------
+           - sudo apt install nginx
+           - 
+           - 
+           - 
+           - 
+      
+      Un-install
+      -----------
+           - sudo apt-get remove nginx nginx-common
+           - sudo apt-get purge nginx nginx-common
+           - sudo apt-get autoremove
+      Nginx Issue
+      ------------
+           - sudo nginx -t
+           - tail -f /var/log/nginx/error.log
+           - ps auxf | grep nginx
+
+</details>    
+           
 
 ### Redis Installation
 ----------------------
+<details><summary><b>Info</b></summary>
+
+</details>
 
 
 
 
 ### Varnish Installation
 ------------------------
+<details><summary><b>Info</b></summary>
+
+</details>
 
 
-
-
-
-
-
-### Docker Command
---------------------
-- sudo docker compose ps                      -to check the details
-- sudo docker compose stop                    
-- sudo docker compose start  
-- sudo docker compose exec app bash           -go inside to magento directory
-- sudo docker compose exec mysql bash         -go inside to mysql 
-- sudo docker volume ls                       - list all remaning container present in docker
-- sudo docker compose down
-
-
-#### Copy any File from Desktop to Inside  Docker
- ---------------------------------------------
-   - docker cp file.sql container_id:/custom_name.sql
 
 
 ## Install Magento Using Docker Way
 ====================================
 
+<details><summary><b>Info</b></summary>
+	
   step -1
           -  Download the sample docker file and extract in the desired location and   Rename the extracted folder to desired project name . 
            Link - https://drive.google.com/file/d/1WVtY4EUHqb0KQVWTH8kEzjjzkIP6QIh-/view?usp=sharing
@@ -889,8 +819,14 @@ step -7
 bin/magento setup:install --base-url=http://magento24.local/ --db-host=mysql  --db-name=magento --db-user=root --db-password=codilar -- admin-firstname=admin --admin-lastname=demo --admin-email=sachin@codilar.com --admin-user=sachin --admin-password=admin123 --language=en_US --currency=INR --timezone=Asia/Kolkata --use-rewrites=1 --search-engine=elasticsearch7 --elasticsearch-host=elasticsearch --elasticsearch-port=9200
 
 
+- docker cp file.sql container_id:/custom_name.sql    - copy file from docker
+
+</details>
+
+
 ### Elastic Search Command
 ---------------------------
+<details><summary><b>Info</b></summary>
       General
       --------
                   - service elasticsearch status
@@ -942,10 +878,13 @@ bin/magento setup:install --base-url=http://magento24.local/ --db-host=mysql  --
     Links:-
     ------
          - https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-elasticsearch-on-ubuntu-20-04
-         
+
+
+</details>         
                                
 ### RabbitMQ Setup Command
---------------------------                              
+<details><summary><b>Info</b></summary>
+	
            Install of RabbitMQ   - All setup mention in given docs link only .
            -------------------
                    - sudo apt install -y rabbitmq-server   - you can go this or you can go with below link
@@ -992,11 +931,14 @@ bin/magento setup:install --base-url=http://magento24.local/ --db-host=mysql  --
                                        Ex - npx kill-port 8080(put which port error is showing)
            Un-Install Command
            ------------------
+
+
+</details>    
            
            
 ## Install MailHog For Ubuntu -18.04 & Configure for Magento2
 =============================================================
-
+<details><summary><b>Info</b></summary>
 
     step -1
     ------- 
@@ -1012,16 +954,10 @@ bin/magento setup:install --base-url=http://magento24.local/ --db-host=mysql  --
                - I am going with  SMTP Extension for Sending mail (you can go with Other)
                - sudo composer require mageplaza/module-smtp    - install the SMTP
                - run se:up and ca:fl 
-    
-# Study Reff
-------------
-    
-   -  https://www.emizentech.com/blog/magento-2-4-with-elasticsearch-complete-guide.html
-  
-  
-  
-Installation Over Windos OS - Virtual Box , WSL, Hyper -v
-=========================================================
+        
+   -  https://www.emizentech.com/blog/magento-2-4-with-elasticsearch-complete-guide.html  ----> reference
+   -  
+  </details>
 
 ## Installation of Magento Over Hyper-v Using Windows OS
 
@@ -1039,6 +975,7 @@ Installation Over Windos OS - Virtual Box , WSL, Hyper -v
    
 Widows Problem
 ==============
+<details><summary><b>Info</b></summary>
    
     # Get the Serial number of Windows
           - open CMD as Administrator
@@ -1077,8 +1014,7 @@ Widows Problem
      Install latest version
               
 	      - 
-		     
-        
+</details> 
 	             
 
 Git - Issue
@@ -1625,13 +1561,8 @@ Git - Issue
 ![Screenshot from 2023-04-01 00-45-25](https://user-images.githubusercontent.com/78407424/229267905-3200c515-be52-4ba6-9ddc-43aa047e0c51.png)
 
 
-### Sample Date Setup For Magento 
-
-
-
-
-
 ### How We Can Push Magento Code to Github
+<details><summary><b>Info</b></summary>
 
    step -1
    --------
@@ -1663,7 +1594,7 @@ Git - Issue
 	 - git push origin main
   
 	 
-
+</details>
 
 
 
@@ -1724,10 +1655,8 @@ Git - Issue
 ### How to AEM On Ubuntu & IDEs
 <details><summary><b>Info</b></summary>
 
-
-
 	   Install intelij IDEs
-           ---------------------
+           --------------------
 
 	                - open terminal and run below command 
 
@@ -1735,10 +1664,28 @@ Git - Issue
 
                                    - sudo snap install intellij-idea-community --classic                  -------- install the IDES
 		     
+
+	 Install Eclipse
+         ---------------
+       
     
 
 </details>       
 
+
+
+
+
+# DevOps Setup
+---------------
+
+### Docker
+
+
+### Jenkins
+
+
+### 
 
 
 
