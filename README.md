@@ -1719,9 +1719,25 @@ Git - Issue
 	
 </details>       
 
+
+
+### How to AEM On Ubuntu & IDEs
+<details><summary><b>Info</b></summary>
+
+
+
+	   Install intelij IDEs
+           ---------------------
+
+	                - open terminal and run below command 
+
+		                   - snap find "intelij"  (it will list all avialable ide version )       -------- here we are installing the snap version
+
+                                   - sudo snap install intellij-idea-community --classic                  -------- install the IDES
+		     
     
 
-
+</details>       
 
 
 
