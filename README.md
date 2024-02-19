@@ -5,7 +5,8 @@ one place for all tech stack
      
 OS Installation
 ---------------
-
+<details><summary><b>Info</b></summary>
+	
 # Ubuntu
 
        - lsb_release -a
@@ -13,7 +14,9 @@ OS Installation
 # Windows
 
 # Mac 
-                       
+
+
+</details>
          
 Language's :
 ----------
