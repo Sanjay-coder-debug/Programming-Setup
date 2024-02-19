@@ -467,12 +467,11 @@ Developer tool's
 
 Database Setup
 --------------
+<details><summary><b>Info</b></summary>
 ## Relational
 --------------
 ### Mysql Install & Un-Install
 ------------------------------
-<details><summary><b>Info</b></summary>
-	
         General 
         --------       
              - mysql --version
