@@ -590,14 +590,18 @@ Database Setup
          - Connect Database into some GUI and CLI
 
                    - visit the same link as above go to --> products ---> select community editions
-		   - Tools 
-                       |------ MongoDb Shell -------- CLI
+		   - Tools  
+                       |------ MongoDb Shell -------- CLI  ----> https://www.mongodb.com/try/download/shell
 		                   - version
 				   - platform
 				   - package
        
-                       |------ MongoDB Compass Download (GUI)
+                       |------ MongoDB Compass Download (GUI)  ----> https://www.mongodb.com/try/download/compass
+		                     - version
+				     - platform
+				     - package
        
+              - cd Downloads
               - sudo dpkg -i mongodb-mongosh_2.1.5_amd64.deb ---> CLI     
 	      - mongosh (check the download is sucess) ---------> go inside the mongo cli
 
