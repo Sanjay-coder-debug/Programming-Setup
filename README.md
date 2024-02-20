@@ -551,7 +551,8 @@ Database Setup
  ### MariaDB
  -----------
  <details><summary><b>Info</b></summary>
- </details>details>
+	 
+ </details>
  
  ### Beekeeper Studio Db view for Mysql & Maria Db
  <details><summary><b>Info</b></summary>
@@ -580,22 +581,28 @@ Database Setup
 	      - after select now download
 
               - cd Downloads (i keep the download file in this directory)
-	                    - sudo dkpg -i mongodb-org-server_7.0.5_amd64.deb    --- unzip the 
+	                    - sudo dpkg -i mongodb-org-server_7.0.5_amd64.deb    --- unzip the 
 		     
               - sudo systemctl status mongod
               - sudo systemctl start mongod
 	      - sudo systemctl stop mongod
 
-         - Connect Database into some GUI
+         - Connect Database into some GUI and CLI
 
                    - visit the same link as above go to --> products ---> select community editions
 		   - Tools 
-                       |------ MongoDb Shell
+                       |------ MongoDb Shell -------- CLI
 		                   - version
 				   - platform
 				   - package
        
-              - sudo dkpg -i mongodb-mongosh_2.1.5_amd64.deb    
+                       |------ MongoDB Compass Download (GUI)
+       
+              - sudo dpkg -i mongodb-mongosh_2.1.5_amd64.deb ---> CLI     
+	      - mongosh (check the download is sucess) ---------> go inside the mongo cli
+
+              - sudo dpkg -i mongodb-compass_1.42.1_amd64.deb   ----------- GUI
+	      - mongodb-compass
                
 
 
