@@ -466,10 +466,12 @@ Developer tool's
 Database Setup
 --------------
 <details><summary><b>Info</b></summary>
+	
 ## Relational
 --------------
 ### Mysql Install & Un-Install
 ------------------------------
+<details><summary><b>Info</b></summary>
         General 
         --------       
              - mysql --version
@@ -544,18 +546,20 @@ Database Setup
       Install Mysql work Bench Ubuntu
       -------------------------------
        - sudo snap install mysql-workbench-community
-  
+</details>
 
  ### MariaDB
  -----------
+ <details><summary><b>Info</b></summary>
+ </details>details>
  
  ### Beekeeper Studio Db view for Mysql & Maria Db
------------------------------------------------------
+ <details><summary><b>Info</b></summary>
    - sudo apt update
    - sudo apt install snapd
    - sudo snap install beekeeper-studio
   
-
+</details>
 
 
 
@@ -563,7 +567,42 @@ Database Setup
 ----------------
 
 ### MongoDB
------------
+<details><summary><b>Info</b></summary>
+
+       Install On Ubuntu
+       =================
+              - visit mongoDb Official Site i.e - https://www.mongodb.com/try/download/community
+	      - select 
+                       - lsb_release -a   --- check ubuntu version
+                       - version
+		       - platform
+		       - package
+	      - after select now download
+
+              - cd Downloads (i keep the download file in this directory)
+	                    - sudo dkpg -i mongodb-org-server_7.0.5_amd64.deb    --- unzip the 
+		     
+              - sudo systemctl status mongod
+              - sudo systemctl start mongod
+	      - sudo systemctl stop mongod
+
+         - Connect Database into some GUI
+
+                   - visit the same link as above go to --> products ---> select community editions
+		   - Tools 
+                       |------ MongoDb Shell
+		                   - version
+				   - platform
+				   - package
+       
+              - sudo dkpg -i mongodb-mongosh_2.1.5_amd64.deb    
+               
+
+
+
+
+
+</details>
 
 
  </details> 
