@@ -415,6 +415,11 @@ IDE's & Editors & Tools
 
 ### Postman
 -----------
+<details><summary><b>Info</b></summary>
+
+      - sudo snap install postman
+  
+</details>
 
 
 ### Eclipse
@@ -458,6 +463,12 @@ Developer tool's
 - sudo apt install anydesk
 - anydesk
 
+
+### Install any Snap
+-------------------
+- sudo apt install snapd
+
+- sudo snap install drawio
 
 
 </details>      
@@ -1593,8 +1604,28 @@ FrontEnd Setup
 
 
 	
-</details>       
+</details>    
+
+### How to Setup Express Js
+---------------------------
+<details><summary><b>Info</b></summary>
+	
+	   Express 
+	   -------
+	     - cd mkdir server
+	     - npm init -y
+	     - npm i express
+      
+	   NodeMon
+	   -------
+	         - no need to start the server again and again
+	         - npm i nodemon
+	         - nodemon server.js
+
+     
+
 </details>      
+</details>  
 
 
 ### How to AEM On Ubuntu & IDEs
