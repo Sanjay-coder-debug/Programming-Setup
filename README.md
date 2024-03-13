@@ -26,6 +26,13 @@ Language's :
 
 ### Java : 
 
+           - sudo apt install java-common
+
+	   - sudo  update-java-alternatives --list
+
+    
+    	
+
 
 ### Php : 
 
