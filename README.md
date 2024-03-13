@@ -26,11 +26,15 @@ Language's :
 
 ### Java : 
 
-           - sudo apt install java-common
+Java Install On Ubuntu
 
+           - sudo apt install openjdk-11-jdk
+           - sudo apt install java-common
 	   - sudo  update-java-alternatives --list
 
-    
+           - sudo update-java-alternatives --set java-1.11.0-openjdk-amd64
+	   - java -version
+           - export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
     	
 
 
