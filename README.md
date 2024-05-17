@@ -257,6 +257,12 @@ Framework : - :
 
 
 
+        ElasticSearch Issue After changing the Database
+        -----------------------------------------------
+                 - select *from core_config_data where path like "%elastic%";
+                 - change the port to ---> localhost
+
+
 
         Some Error To Solve in Magento 
         ------------------------------
