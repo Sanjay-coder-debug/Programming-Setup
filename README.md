@@ -974,6 +974,7 @@ Magento Tool's & Setup
 ### Elastic Search Command
 ---------------------------
 <details><summary><b>Info</b></summary>
+	
       General
       --------
                   - service elasticsearch status
@@ -987,41 +988,29 @@ Magento Tool's & Setup
                   - /etc/init.d/elasticsearch stop
                   - /etc/init.d/elasticsearch restart
                   - /etc/init.d/elasticsearch force-reload
- 
-     Check The Version
-     -----------------
-                    - curl -XGET 'http://localhost:9200'
-                    - bin/elasticsearch --version
+
+     Install
+     -------
+
+                  - curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
+		  - echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-7.x.list
+                  - sudo apt update
+                  - sudo apt install elasticsearch
+		  - sudo nano /etc/elasticsearch/elasticsearch.yml
+                        - network.host: localhost
+                        - xpack.security.enabled: false
+
+                  - sudo systemctl start elasticsearch
+                  - sudo systemctl enable elasticsearch  
+   
+                  - sudo ufw allow from 198.51.100.0 to any port 9200
+
+                  - sudo ufw enable
+
+                  - sudo ufw status
+   
+                  - curl -X GET 'http://localhost:9200'
     
-    
-     Install Command for Elasticsearch
-     ---------------------------------
-     - 
-     
-     
-     
-     
-     UnInstall Command For Elasticsearch
-     -----------------------------------
-     - 
-    
-    
-    Configuration Of Elastic Search in Magento2
-    -------------------------------------------
-                               - 
-                               - 
-                               - 
-                               -
-                               -
-                               
-                    
-    Use Of Elastic Search in Magento2
-    ---------------------------------
-                               - 
-                               - 
-                               - 
-                               - 
-                               - 
     Links:-
     ------
          - https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-elasticsearch-on-ubuntu-20-04
@@ -1133,6 +1122,7 @@ Composer.json Vs Composer.lock
 ------------------
 
 <details><summary><b>Info</b></summary>
+	
            General
            ---------- 
                         - whereis apache2                       - check the if furthur exist after uninstall
@@ -1162,6 +1152,7 @@ Composer.json Vs Composer.lock
 -----------------
 
 <details><summary><b>Info</b></summary>
+	
       General
       --------
            - nginx --version
@@ -1280,6 +1271,7 @@ Composer.json Vs Composer.lock
 ### Setup - Xdebug in Magento Proect
 ------------------------------------
 <details>
+	
         Xdebug Setup in Local
         ----------------------
               - https://devdocs.magento.com/cloud/howtos/debug.html
